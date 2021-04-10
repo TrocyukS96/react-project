@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 
 import Header from './header/Header';
 import Stock from "./components/stock/Stock";
+import BlokSearh from './components/BlokSearh/BlokSerah';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Stock />
         <Btn />
+        <BlokSearh/>
         <Footer />
       </div>
     </div>
