@@ -1,6 +1,7 @@
 
 import './App.css';
 import Btn from './components/btn/Btn';
+import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Nav />
       <Btn/>
+      <Footer/>
     </div>
   );
 }

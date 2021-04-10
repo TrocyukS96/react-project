@@ -1,13 +1,13 @@
 
-import './Btn.css';
+import './Footer.css';
 
-function Btn() {
+function Footer() {
   return (
-    <button className="btn">
+    <div className="footer">
      
-искать
-    </button>
+
+    </div>
   );
 }
 
-export default Btn;
+export default Footer;
