@@ -1,0 +1,11 @@
+.banner-block {
+   margin-top: 80px;
+
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.slider-banner {
+   flex: 0 1 74%;
+}
