@@ -15,7 +15,7 @@ function App() {
             <div className="conteiner">
                 <Header />
                 <Stock />
-                <Btn />
+                
                 <BlokSearh/>
                 <div className="CardDetailsContainer">
                     <CardDetails text="Квадроциклы" />
