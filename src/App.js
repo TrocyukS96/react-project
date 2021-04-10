@@ -2,16 +2,18 @@
 import './App.css';
 import Btn from './components/btn/Btn';
 import Footer from './components/footer/Footer';
-import Nav from './components/nav/Nav';
-import Logo from "./components/logo/Logo";
+
+
+import Header from './header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Logo />
-      <Nav />
-      <Btn/>
-      <Footer/>
+      <div className="conteiner">
+        <Header />
+        <Btn />
+        <Footer />
+      </div>
     </div>
   );
 }

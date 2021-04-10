@@ -1,13 +1,15 @@
-.menu {}
+.menu {
+   margin-top: 30px;
+}
 
-.menu-list {
+.menu__list {
    display: flex;
    justify-content: space-between;
    align-items: center;
 
+   text-align: center;
 }
 
 .menu__item {
-   font-size: 20px;
-   list-style: none;
+   padding: 15px 0;
 }
