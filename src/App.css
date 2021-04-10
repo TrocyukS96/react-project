@@ -13,3 +13,10 @@
   max-width: 1171px;
   margin: 0 auto;
 }
+
+.CardDetailsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(2, 130px);
+  gap: 30px;
+}
