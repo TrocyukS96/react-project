@@ -1,20 +1,19 @@
 
 import './App.css';
-import Btn from './components/btn/Btn';
 import Footer from './components/footer/Footer';
 
 
 import Header from './header/Header';
-import Stock from "./components/stock/Stock";
+import Banner from './header/banner/Banner';
 
 function App() {
   return (
     <div className="App">
       <div className="conteiner">
         <Header />
-        <Stock />
-        <Btn />
-        <Footer />
+        <Banner/>
+        <Footer/>
+
       </div>
     </div>
   );
