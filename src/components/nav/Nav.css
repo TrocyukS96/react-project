@@ -1,0 +1,13 @@
+.menu {}
+
+.menu-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.menu__item {
+   font-size: 20px;
+   list-style: none;
+}
