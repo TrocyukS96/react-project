@@ -1,0 +1,56 @@
+.stock {
+    height: 397px;
+    width: 265px;
+    border: 1px solid blue;
+}
+
+.stock-price {
+    /*font-family: Barlow;*/
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #1C62CD;
+    margin-right: 10px;
+}
+
+.stock-price-normal {
+    /*font-family: Barlow;*/
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #c4c4c4;
+    margin-right: 5px;
+}
+
+.stock-price-normal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -35px;
+}
+
+.stock-price::after {
+    content: " ₽";
+}
+
+.stock-price-normal::after {
+    content: " ₽";
+}
+
+.stock-img-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stock-time-action {
+    /*height: 99px;*/
+    /*width: 264px;*/
+    background-color: #F0F0F4;
+;
+}
+
+
