@@ -15,10 +15,11 @@ function BlokSearh() {
             <form>
                 
                 <input type="text" placeholder="Введите марку"></input>
+                <Btn/>
                 
             </form>
 
-            <Btn/>
+          
         
 
         </div>
