@@ -4,7 +4,7 @@ import './FilterLink.css';
 
 
 
-function FilterLink() {
+function FilterLink(props) {
   return (
       <a href="#">Показать ещё </a>
     

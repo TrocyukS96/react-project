@@ -1,0 +1,17 @@
+.blok-info{
+   width: 100%;
+}
+
+
+.blok-info-filter{
+   display: flex;
+   justify-content: space-between;
+}
+.blok-info-fliter-link{
+   background: #F0F0F4;
+   margin: 0 10px 0 0;
+   cursor: pointer;
+}
+.blok-info-fliter-right{
+   display: flex;
+}
