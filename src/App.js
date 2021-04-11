@@ -8,6 +8,7 @@ import Stock from "./components/stock/Stock";
 import BlokSearh from './components/BlokSearh/BlokSerah';
 
 import CardDetails from "./components/cardDetails/CardDetails";
+import CardBaner from './components/cardBaner/CardBaner';
 
 function App() {
     return (
@@ -26,6 +27,8 @@ function App() {
                     <CardDetails text="Двигатели" />
                 </div>
                 
+                <CardBaner/>
+
                 <Footer />
             </div>
         </div>
