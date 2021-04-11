@@ -1,5 +1,5 @@
 
-
+import React from "react";
 
 import Inst from "./../../assets/image/social-icons/instagram.svg";
 import Vk from "./../../assets/image/social-icons/vk .svg";
@@ -7,6 +7,7 @@ import Fb from "./../../assets/image/social-icons/facebook .svg";
 import Yt from "./../../assets/image/social-icons/youtube .svg";
 import './Footer.css';
 import Btn from "../btn/Btn";
+import Input from "../input/Input";
 
 function Footer() {
   return (
@@ -18,8 +19,8 @@ function Footer() {
                 Подпишитесь на нашу рассылку 
                 и узнавайте о акция быстрее
             </p>
+            <Input type="text" placeholder="Введите ваш email"/>
             
-            <input  type="text" placeholder="Введите ваш email"/>
 
             <Btn text="Отпрвить" 
             

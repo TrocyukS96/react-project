@@ -1,6 +1,7 @@
 
 import Btn from '../btn/Btn';
 import BtnSearh from '../btn/BtnSearh';
+import Input from '../input/Input';
 import './BlokSearh.css';
 
 
@@ -13,8 +14,8 @@ function BlokSearh() {
             <BtnSearh btnName="Поиск по названию товара"/>
 
             <form>
+                <Input type="text" placeholder="Введите марку"/>
                 
-                <input type="text" placeholder="Введите марку"></input>
                 <Btn text="Искать"
                 
                 style={{background: "#1C62CD"}}  />

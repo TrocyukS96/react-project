@@ -1,0 +1,20 @@
+.blok-filter{
+   max-width: 300px;
+}
+
+.checkbox-wrap{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.filter-power-item{
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #C4C4C4;
+}
+
+.blok-filter-bottom{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}

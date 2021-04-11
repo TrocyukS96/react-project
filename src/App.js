@@ -10,6 +10,7 @@ import BlokSearh from './components/BlokSearh/BlokSerah';
 import CardDetails from "./components/cardDetails/CardDetails";
 import CardBaner from './components/cardBaner/CardBaner';
 import Banner from './header/banner/Banner';
+import BlokFilter from './components/BlokFilter/BlokFilter';
 
 function App() {
     return (
@@ -29,6 +30,15 @@ function App() {
                 </div>
                 <CardBaner/>
 
+                <Footer />
+
+
+
+
+
+                <Header />
+                
+                <BlokFilter/>
                 <Footer />
             </div>
         </div>
