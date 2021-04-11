@@ -6,6 +6,7 @@ import Vk from "./../../assets/image/social-icons/vk .svg";
 import Fb from "./../../assets/image/social-icons/facebook .svg";
 import Yt from "./../../assets/image/social-icons/youtube .svg";
 import './Footer.css';
+import Btn from "../btn/Btn";
 
 function Footer() {
   return (
@@ -20,7 +21,9 @@ function Footer() {
             
             <input  type="text" placeholder="Введите ваш email"/>
 
-            <button >Отправить</button>
+            <Btn text="Отпрвить" 
+            
+            style={{background: "#1C62CD"}} />
           </div>
 
         <div>

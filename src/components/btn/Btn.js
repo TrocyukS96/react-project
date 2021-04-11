@@ -1,12 +1,9 @@
 
 import './Btn.css';
 
-function Btn() {
+function Btn(props) {
   return (
-    <button className="btn">
-     
-искать
-    </button>
+    <button className="btn" style={props.style} >{props.text}</button>
   );
 }
 

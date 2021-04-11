@@ -1,0 +1,19 @@
+.baner{
+ background-color: #1C62CD;
+ width: 100%;
+ max-height: 165px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.baner-img{
+   max-width: 175px;
+}
+
+.baner-text{
+   font-size: 36px;
+   color: #fff;
+   max-width: 270px;
+   line-height: 1;
+}

@@ -15,10 +15,13 @@ function BlokSearh() {
             <form>
                 
                 <input type="text" placeholder="Введите марку"></input>
+                <Btn text="Искать"
+                
+                style={{background: "#1C62CD"}}  />
                 
             </form>
 
-            <Btn/>
+          
         
 
         </div>
