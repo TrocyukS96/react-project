@@ -1,4 +1,32 @@
-.slider-img {
-   width: 100%;
-   height: 100%;
+.swiper-container {
+   width: 870px;
+}
+
+.swiper-pagination {
+   bottom: 0;
+   padding-bottom: 10px;
+}
+
+.swiper-wrapper {
+   padding-inline-start: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   color: aliceblue;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: #FFFFFF;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+   bottom: 35px;
+}
+
+.swiper-pagination-bullet {
+   background-color: rgb(14, 13, 13);
+   border: 2px solid #fff;
 }
