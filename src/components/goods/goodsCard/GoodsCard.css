@@ -1,0 +1,36 @@
+.goods__slider-card {
+   width: 271px;
+   height: 403px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   position: relative;
+
+   border: 2px solid #CDCDCD;
+
+   align-items: center;
+}
+
+.goods__slider-card button {
+   align-self: flex-end;
+
+}
+
+.goods__discr {
+   text-align: center;
+}
+
+.goods__price {
+
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+}
+
+.goods__sale-img {
+   position: absolute;
+   top: 0;
+   left: 0;
+}

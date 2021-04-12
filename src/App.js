@@ -12,6 +12,7 @@ import BlokFilter from './components/BlokFilter/BlokFilter';
 import CardCatalog from "./components/cardCatalog/CardCatalog";
 import BlokInfo from './components/BlokInfo/BlokInfo';
 import Tabs from "./components/tabs/Tabs";
+import Goods from './components/goods/Goods';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <CardDetails text="Вездеходы" />
                     <CardDetails text="Двигатели" />
                 </div>
+                <Goods/>
                 <CardBaner />
 
                 <Footer />

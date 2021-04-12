@@ -1,0 +1,30 @@
+.goods__title {
+   padding-bottom: 30px;
+
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 30px;
+
+}
+
+.goods__menu {
+   padding-bottom: 35px;
+
+   display: flex;
+}
+
+.goods__menu-item {
+   padding-right: 50px;
+
+}
+
+.goods__menu-item:last-child {
+   padding-right: 0;
+}
+
+.goods__menu-link {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 18px;
+   text-align: center;
+}

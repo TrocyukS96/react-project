@@ -1,0 +1,21 @@
+.btn-show {
+   margin: 35px auto;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 50px;
+   width: 252px;
+
+   background-color: #F0F0F4;
+
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.12em;
+   text-transform: uppercase;
+
+   color: #2F3035;
+   text-align: center;
+
+}
