@@ -11,6 +11,7 @@ import Banner from './header/banner/Banner';
 import BlokFilter from './components/BlokFilter/BlokFilter';
 import CardCatalog from "./components/cardCatalog/CardCatalog";
 import BlokInfo from './components/BlokInfo/BlokInfo';
+import Tabs from "./components/tabs/Tabs";
 
 function App() {
     return (
@@ -57,6 +58,9 @@ function App() {
                 </main>  
                 <Footer />
 
+
+                <Header />
+                <Tabs />
             </div>
         </div>
     );
