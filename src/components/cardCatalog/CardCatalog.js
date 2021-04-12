@@ -17,7 +17,7 @@ function CardCatalog(props) {
             <span>{props.text2}</span>
             {/*<span >нет в наличии</span>*/}
             {/*<a href="#">Сообщить о поступлении</a>*/}
-            <img src={cartImg} alt="cart" />
+            <button><img src={cartImg} alt="cart" /></button>
             {/*<img src={viewProductImg} alt="view" />*/}
         </div>
 
