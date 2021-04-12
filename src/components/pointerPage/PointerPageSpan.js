@@ -10,7 +10,7 @@ function PointerPageSpan(props) {
 
     
 
-      <span className="PointerPageSpan" style={props.style}>{props.text}</span>
+      <a href="#" className="PointerPageSpan" style={props.style}>{props.text}</a>
 
       
 
