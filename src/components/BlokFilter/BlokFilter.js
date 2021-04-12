@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import Btn from "../btn/Btn";
 import Input from "../input/Input";
 
