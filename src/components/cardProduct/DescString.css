@@ -1,0 +1,13 @@
+
+
+span{
+    display: block;
+}
+
+
+.descString{
+    display: flex;
+    justify-content: space-between;
+    max-width: 420px;
+    border-bottom: 1px solid black;
+}

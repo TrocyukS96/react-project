@@ -15,6 +15,7 @@ import Tabs from "./components/tabs/Tabs";
 import Goods from './components/goods/Goods';
 import Pickup from "./components/pickup/Pickup";
 import AdditionalGoods from './components/additionalGoods/AdditionalGoods';
+import CardProduct from './components/cardProduct/CardProduct';
 
 function App() {
     return (
@@ -64,6 +65,7 @@ function App() {
 
 
                 <Header />
+                <CardProduct/>
                 <Tabs />
                 <Pickup />
                 <AdditionalGoods />

@@ -1,0 +1,33 @@
+
+span{
+    display: block;
+}
+
+.card-product-contener{
+    
+    display: flex;
+    
+}
+
+.card-product-left-wrap{
+    width: 100%;
+}
+.card-product{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-product-span-top{
+    align-self: flex-start;
+    background: #1C62CD;
+}
+
+
+
+.card-product-right-wrap{
+    width: 100%;
+}
+.card-product-info-img{
+    display: flex;
+}
