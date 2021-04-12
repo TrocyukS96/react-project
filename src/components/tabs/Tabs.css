@@ -1,0 +1,21 @@
+.tabs {
+    height: 70px;
+    width: 1172px;
+    border-radius: 1px;
+    background: #F0F0F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabsText {
+    color: #2F3035;
+}
+
+.tabs a {
+    text-decoration: none;
+}
+
+.tabs a:active {
+    border-bottom: 2px solid #1C62CD;
+}
