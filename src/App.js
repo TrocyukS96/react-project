@@ -16,6 +16,7 @@ import Goods from './components/goods/Goods';
 import Pickup from "./components/pickup/Pickup";
 import AdditionalGoods from './components/additionalGoods/AdditionalGoods';
 import CardProduct from './components/cardProduct/CardProduct';
+import PointerPage from "./components/pointerPage/PointerPage";
 
 function App() {
     return (
@@ -65,6 +66,7 @@ function App() {
 
 
                 <Header />
+                <PointerPage/>
                 <CardProduct/>
                 <Tabs />
                 <Pickup />
