@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css';
 import GoodsCard from "../goodsCard/GoodsCard";
 import './Slider.css';
 
@@ -6,16 +9,31 @@ import './Slider.css';
 
 function Slider() {
    return (
-      <div className="goods__slider">
-         <div className="goods__slider-cards">
-            <GoodsCard text="Водонепроницаемый Рюкзак" text2="9 800 ₽" />
-            <GoodsCard text="Спасательный жилет BRP Men's Airflow PFD" text2="6 900 ₽" />
-            <GoodsCard text="BRP Audio-Premium System" text2="68 000 ₽" />
-            <GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" />
-         </div>
+      <Swiper
+         className="products__slider" tag="ul" navigation pagination spaceBetween={30}
+         slidesPerView={4}
+         onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+         onSlideChange={(swiper) => {
+            console.log('Slide index changed to: ', swiper.activeIndex);
+         }}
+         onReachEnd={() => console.log('Swiper end reached')}
+      >
 
-      </div>
-   )
+         <SwiperSlide className="products__slider-item" tag="li"> <GoodsCard text="Водонепроницаемый Рюкзак" text2="9 800 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательный жилет BRP Men's Airflow PFD" text2="6 900 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="BRP Audio-Premium System" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+         <SwiperSlide className="products__slider-item" tag="li"><GoodsCard text="Спасательное снаряжение" text2="68 000 ₽" /></SwiperSlide>
+
+      </Swiper >
+   );
 }
 
 export default Slider;

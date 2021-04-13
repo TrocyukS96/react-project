@@ -9,18 +9,7 @@ import sliderImg from "./../../assets/image/slider-banner/slider-banner.png";
 SwiperCore.use([Navigation, Pagination]);
 
 function SliderBanner() {
-   // const slides = [];
-   // for (let i = 0; i < 5; i += 1) {
-   //    // slides.push(
-   //    //    <SwiperSlide key={`slide-${i}`} tag="li">
-   //    //       <img
-   //    //          src={`https://picsum.photos/id/${i + 1}/500/300`}
-   //    //          style={{ listStyle: 'none' }}
-   //    //          alt={`Slide ${i}`}
-   //    //       />
-   //    //    </SwiperSlide>
-   //    // );
-   // }
+
    return (
 
       <Swiper
@@ -34,10 +23,10 @@ function SliderBanner() {
       >
 
          <SwiperSlide className="slider__item" tag="li"> <img src={sliderImg} alt="slider-img" /> </SwiperSlide>
-         <SwiperSlide className="slider__item"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
-         <SwiperSlide className="slider__item"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
-         <SwiperSlide className="slider__item"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
-      ...
+         <SwiperSlide className="slider__item" tag="li"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
+         <SwiperSlide className="slider__item" tag="li"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
+         <SwiperSlide className="slider__item" tag="li"><img src={sliderImg} alt="slider-img" /></SwiperSlide>
+
       </Swiper>
    );
 }
