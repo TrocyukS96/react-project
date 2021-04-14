@@ -1,5 +1,6 @@
 import React from "react";
 import BtnShow from "../btnShow/BtnShow";
+import PointerPageSpan from "../pointerPage/PointerPageSpan";
 import BlockHeader from './blockHeader/BlockHeader';
 import './Goods.css';
 import Slider from './slider/Slider';
