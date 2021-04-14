@@ -6,12 +6,14 @@ import Slider from './slider/Slider';
 
 
 
-function Goods() {
+function Goods(props) {
    return (
       <div className="goods">
          <BlockHeader text="Популярные товары"/>
          <Slider />
-         <BtnShow text="Показать ещё"/>
+          {props.button &&
+              <BtnShow text="Показать ещё" />
+          }
       </div>
    )
 }

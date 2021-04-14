@@ -1,15 +1,15 @@
 import React from "react";
 import "./CardBaner.css";
-import carOne from "./../../assets/image/Baner/carOne.svg";
-import carTwo from "./../../assets/image/Baner/carTwo.svg";
-import Btn from "../btn/Btn";
+import carOne from "../../../../assets/image/Baner/carOne.svg";
+import carTwo from "../../../../assets/image/Baner/carTwo.svg";
+import Btn from "../../../btn/Btn";
 
 function CardBaner() {
     return (
         <div className= "baner">
             <div className="baner-img-wrap">
-                <img className="baner-img" src={carOne}/>
-                <img className="baner-img" src={carTwo}/>
+                <img className="baner-img" src={carOne} alt="#" />
+                <img className="baner-img" src={carTwo} alt="#" />
             </div>
             
             

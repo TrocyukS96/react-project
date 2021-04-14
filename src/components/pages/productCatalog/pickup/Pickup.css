@@ -17,7 +17,6 @@
 }
 
 .pickupSearch button {
-    color: transparent;
     position: absolute;
     top: 3px;
     right: 33px;
@@ -30,11 +29,11 @@
 
 .pickupInfoBuy {
     display: grid;
-    grid-template-rows: repeat(5, 100px);
+    grid-auto-rows: 100px;
     grid-template-columns: 300px 320px 200px 150px 200px;
 }
 
 .pickupSubGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
 }

@@ -9,21 +9,8 @@
   min-height: 100vh;
 }
 
-.conteiner {
+.container {
   max-width: 1171px;
   margin: 0 auto;
 }
 
-.CardDetailsContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 370px);
-  grid-template-rows: repeat(2, 130px);
-  gap: 30px;
-}
-
-.CardCatalogContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 270px);
-  grid-template-rows: repeat(4, 410px);
-  gap: 30px;
-}

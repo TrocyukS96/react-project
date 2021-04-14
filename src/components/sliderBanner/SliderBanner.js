@@ -15,11 +15,6 @@ function SliderBanner() {
       <Swiper
          className="slider__items" tag="ul" navigation pagination spaceBetween={40}
          slidesPerView={1}
-         onInit={(swiper) => console.log('Swiper initialized!', swiper)}
-         onSlideChange={(swiper) => {
-            console.log('Slide index changed to: ', swiper.activeIndex);
-         }}
-         onReachEnd={() => console.log('Swiper end reached')}
       >
 
          <SwiperSlide className="slider__item" tag="li"> <img src={sliderImg} alt="slider-img" /> </SwiperSlide>

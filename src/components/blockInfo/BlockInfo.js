@@ -1,14 +1,14 @@
 import React from "react";
 
-import FilterTitle from "../BlokFilter/BlokFilterComponents/filterTitle/FilterTitle";
+import FilterTitle from "./../blokFilter/blockFilterComponents/filterTitle/FilterTitle";
 
 import BurgerLeft from "./../../assets/image/BlokInfo/burgerLeft.svg";
 import BurgerRight from "./../../assets/image/BlokInfo/burgerRight.svg";
-import './BlokInfo.css';
+import './BlockInfo.css';
 
 
 
-function BlokInfo() {
+function BlockInfo() {
     return (
         <div className="blok-info">
 
@@ -44,8 +44,8 @@ function BlokInfo() {
                     </select>
 
                     <div className="blok-info-burger">
-                      <span className="blok-info-burger-left"><img src={BurgerLeft}/></span>  
-                      <span className="blok-info-burger-right"><img src={BurgerRight}/></span>   
+                      <span className="blok-info-burger-left"><img src={BurgerLeft} alt="#" /></span>
+                      <span className="blok-info-burger-right"><img src={BurgerRight} alt="#" /></span>
                     </div>
 
                 </div>
@@ -59,4 +59,4 @@ function BlokInfo() {
     );
 }
 
-export default BlokInfo;
+export default BlockInfo;

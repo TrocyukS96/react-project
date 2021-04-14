@@ -1,17 +1,17 @@
 
 import Btn from '../btn/Btn';
-import BtnSearh from '../btn/BtnSearh';
+import BtnSearch from './../btn/BtnSearch';
 import Input from '../input/Input';
-import './BlokSearh.css';
+import './BlockSearch.css';
 
 
-function BlokSearh() {
+function BlockSearch() {
     return (
-        <div className="blok-searh">
+        <div className="block-search">
 
-            <BtnSearh btnName="Поиск по номеру"/>
-            <BtnSearh btnName="Поиск по марке"/>
-            <BtnSearh btnName="Поиск по названию товара"/>
+            <BtnSearch btnName="Поиск по номеру"/>
+            <BtnSearch btnName="Поиск по марке"/>
+            <BtnSearch btnName="Поиск по названию товара"/>
 
             <form>
                 <Input type="text" placeholder="Введите марку"/>
@@ -29,4 +29,4 @@ function BlokSearh() {
     );
 }
 
-export default BlokSearh;
+export default BlockSearch;
