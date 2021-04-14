@@ -3,7 +3,7 @@ import './Nav.css'
 import heart from "./../../assets/image/icons/heart.svg"
 import person from "./../../assets/image/icons/person.svg"
 import buy from "./../../assets/image/icons/buy.svg"
-import Logo from '../../components/logo/Logo'
+import Logo from '../logo/Logo'
 
 function Nav () {
    return (

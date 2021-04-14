@@ -1,15 +1,15 @@
- import React from "react";
-import Btn from "../btn/Btn";
-import Input from "../input/Input";
+import React from "react";
+import Btn from "./../btn/Btn";
+import Input from "./../input/Input";
 
-import './BlokFilter.css';
-import FilterChecbox from "./BlokFilterComponents/filterChehkBox/FilterCehkBox";
-import FilterLink from "./BlokFilterComponents/filterLink/FilterLink";
-import FilterSelect from "./BlokFilterComponents/filterSelect/FilterSelect";
-import FilterTitle from "./BlokFilterComponents/filterTitle/FilterTitle";
+import './BlockFilter.css';
+import FilterCheckbox from "./blockFilterComponents/filterCheckbox/FilterCheckbox";
+import FilterLink from "./blockFilterComponents/filterLink/FilterLink";
+import FilterSelect from "./blockFilterComponents/filterSelect/FilterSelect";
+import FilterTitle from "./blockFilterComponents/filterTitle/FilterTitle";
 
 
-function BlokFilter() {
+function BlockFilter() {
     return (
         <div className="blok-filter">
 
@@ -25,8 +25,8 @@ function BlokFilter() {
 
                 <div className="checkbox-wrap">
 
-                    <FilterChecbox text="В наличии"/>
-                    <FilterChecbox text="Под заказ"/>
+                    <FilterCheckbox text="В наличии"/>
+                    <FilterCheckbox text="Под заказ"/>
 
                 </div>   
             </div>
@@ -37,11 +37,11 @@ function BlokFilter() {
 
                 <div className="checkbox-wrap">
 
-                    <FilterChecbox text="Все"/> 
+                    <FilterCheckbox text="Все"/>
 
-                    <FilterChecbox text="Новинки"/>
+                    <FilterCheckbox text="Новинки"/>
 
-                    <FilterChecbox text="Акции"/>
+                    <FilterCheckbox text="Акции"/>
 
                 </div> 
             </div> 
@@ -75,9 +75,9 @@ function BlokFilter() {
 
                 <div className="checkbox-wrap">
 
-                    <FilterChecbox text="BRP"/>
-                    <FilterChecbox text="Spark 2"/>
-                    <FilterChecbox text="Spark 3"/>
+                    <FilterCheckbox text="BRP"/>
+                    <FilterCheckbox text="Spark 2"/>
+                    <FilterCheckbox text="Spark 3"/>
 
                 </div>
 
@@ -94,13 +94,13 @@ function BlokFilter() {
 
                 <div className="checkbox-wrap">
 
-                    <FilterChecbox text="Sea-doo Spark 2"/> 
+                    <FilterCheckbox text="Sea-doo Spark 2"/>
 
-                    <FilterChecbox text="SeaDoo Spark 90 "/>
+                    <FilterCheckbox text="SeaDoo Spark 90 "/>
 
-                    <FilterChecbox text="SeaDoo GTI 155"/>
+                    <FilterCheckbox text="SeaDoo GTI 155"/>
 
-                    <FilterChecbox text="SeaDoo GTR 230"/>    
+                    <FilterCheckbox text="SeaDoo GTR 230"/>
                 </div> 
 
                 <FilterLink/>
@@ -128,13 +128,13 @@ function BlokFilter() {
 
                 <div className="checkbox-wrap">
 
-                    <FilterChecbox text="Россия"/> 
+                    <FilterCheckbox text="Россия"/>
 
-                    <FilterChecbox text="Германия"/>
+                    <FilterCheckbox text="Германия"/>
 
-                    <FilterChecbox text="Китай"/>
+                    <FilterCheckbox text="Китай"/>
 
-                    <FilterChecbox text="США"/>
+                    <FilterCheckbox text="США"/>
 
                 </div> 
 
@@ -160,4 +160,4 @@ function BlokFilter() {
     );
 }
 
-export default BlokFilter;
+export default BlockFilter;

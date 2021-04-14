@@ -6,7 +6,7 @@ import Health from "./../../assets/image/cardProduct/Group.svg";
 import Vector from "./../../assets/image/cardProduct/Vector.svg";
 import Star from "./../../assets/image/cardProduct/Star.svg";
 import DescString from "./DescString";
-import FilterLink from "../BlokFilter/BlokFilterComponents/filterLink/FilterLink";
+import FilterLink from "./../blokFilter/blockFilterComponents/filterLink/FilterLink";
 import Btn from "../btn/Btn";
 
 
@@ -22,7 +22,7 @@ function CardProduct() {
 
           <span className="card-product-span-top">SALE</span>
 
-          <img className="card-product-img" src={CardProductImg} />  
+          <img className="card-product-img" src={CardProductImg} alt="#" />
           
           <span className="card-product-span-discount">1 200 476 ₽</span>
 
@@ -50,11 +50,11 @@ function CardProduct() {
             <img src={Vector}/>
 
             <div className="card-product-info-img">
-              <img src={ Star}/>
-              <img src={ Star}/>
-              <img src={ Star}/>
-              <img src={ Star}/>
-              <img src={ Star}/>
+              <img src={ Star} alt="#"/>
+              <img src={ Star} alt="#"/>
+              <img src={ Star} alt="#"/>
+              <img src={ Star} alt="#"/>
+              <img src={ Star} alt="#"/>
 
             </div>
 

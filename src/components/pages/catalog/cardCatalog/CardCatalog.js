@@ -1,9 +1,9 @@
 import React from "react";
 import './CardCatalog.css';
-import cardCatalogImg from "./../../assets/image/cardCatalog/cardCatalogImg.svg";
-import favoritesImg from "./../../assets/image/cardCatalog/favoritesImg.svg";
-import saleImg from "./../../assets/image/cardCatalog/saleImg.svg";
-import cartImg from "./../../assets/image/cardCatalog/cartImg.svg";
+import cardCatalogImg from "./../../../../assets/image/cardCatalog/cardCatalogImg.svg";
+import favoritesImg from "./../../../../assets/image/cardCatalog/favoritesImg.svg";
+import saleImg from "./../../../../assets/image/cardCatalog/saleImg.svg";
+import cartImg from "./../../../../assets/image/cardCatalog/cartImg.svg";
 
 // import viewProductImg from "./../../assets/image/cardCatalog/viewProductImg.svg"
 

@@ -1,0 +1,6 @@
+.CardCatalogContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-auto-rows: 410px;
+    gap: 30px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import './Pickup.css';
-import pickupSearchImg from "./../../assets/image/pickup/pickupSearchImg.svg"
-import pickupBuyImg from "./../../assets/image/pickup/pickupBuyImg.svg"
+import pickupSearchImg from "../../../../assets/image/pickup/pickupSearchImg.svg"
+import pickupBuyImg from "../../../../assets/image/pickup/pickupBuyImg.svg"
 
 
 function Pickup() {
@@ -14,10 +14,10 @@ function Pickup() {
                     <button type="submit"><img src={pickupSearchImg} alt="search" /></button>
                 </form>
             </div>
-            <div className="pickupCheckboxWrapper">
-                <div className="checkbox">
-                    <input type="checkbox" />Забрать сегодня
-                    <input type="checkbox" />Заберу в течении недели
+            <div className="pickupRadioWrapper">
+                <div className="radio">
+                    <input  name="choosePickup" type="radio" />Забрать сегодня
+                    <input  name="choosePickup" type="radio" />Заберу в течении недели
                 </div>
             </div>
             <div className="pickupInfoBuy">
