@@ -6,7 +6,8 @@ import DescString from "../../cardProduct/DescString";
 import PointerPage from "../../pointerPage/PointerPage";
 import Tabs from "./tabs/Tabs";
 import Pickup from "./pickup/Pickup";
-import AdditionalGoods from "../../additionalGoods/AdditionalGoods";
+import Goods from "../../goods/Goods";
+
 
 
 function ProductCard() {
@@ -21,7 +22,7 @@ function ProductCard() {
           <Pickup />
             </div>
           <div>
-            <AdditionalGoods />
+            <Goods/>
           </div>
         </div>
 

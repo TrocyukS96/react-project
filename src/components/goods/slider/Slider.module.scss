@@ -1,12 +1,10 @@
-.productsSlider.swiperContainer {
+@import './../../../abstracts/variables.scss ';
+
+
+.slider {
    width: 1170px;
-}
 
-.productsSlider .swiperPagination {
-   display: none;
-}
-
-.productsSlider .swiperButton-prev,
-.productsSlider .swiperButton-next {
-   color: #2F3035;
+   &>div {
+      color: $textColor;
+   }
 }

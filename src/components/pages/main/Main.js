@@ -7,7 +7,7 @@ import Stock from "../../stock/Stock";
 import BlockSearch from "../../blockSearch/BlockSearch";
 import CardDetails from "./cardDetails/CardDetails";
 import Goods from "../../goods/Goods";
-import AdditionalGoods from "../../additionalGoods/AdditionalGoods";
+
 
 
 function Main() {
@@ -29,7 +29,7 @@ function Main() {
             </div>
             <Goods />
           <CardBaner />
-          <AdditionalGoods />
+          <Goods button=" " />
         </div>
     );
 }
