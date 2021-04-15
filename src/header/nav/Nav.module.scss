@@ -1,6 +1,30 @@
+@import './../../abstracts/variables.scss';
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../assets/fonts/SFProDisplay-Bold.woff);
+   font-weight: 700;
+   font-style: normal;
+}
+
+
+a {
+   text-decoration: none;
+   color: $textColor;
+}
+
+
+
 .navigation {
    padding-top: 50px;
 
+   font-family: 'SF Pro Display';
+   font-weight: 700;
+   font-style: normal;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: center;
 
    display: flex;
    justify-content: space-between;
@@ -9,16 +33,16 @@
    position: relative;
 }
 
-.navigationLeftList {
+.list {
    display: flex;
    align-items: center;
 }
 
-.navigationLeftItem {
+.listItem {
    padding-right: 50px;
 }
 
-.navigationLeftItem:last-child {
+.listItem:last-child {
    padding-right: 0;
 }
 
@@ -44,33 +68,17 @@
 //   left: -26px;
 //}
 
-.headerIcons {
+.icons {
    display: flex;
    align-items: center;
 
 
 }
 
-.headerIcon {
+.icon {
    padding-right: 10px;
 }
 
-.headerIcon:last-child {
+.icon:last-child {
    padding-right: 0;
-}
-
-.navigationLeft {
-
-}
-
-.navigationLeftLink {
-
-}
-
-.adressLink {
-
-}
-
-.headerIconImg {
-
 }

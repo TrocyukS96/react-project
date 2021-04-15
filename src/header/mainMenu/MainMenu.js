@@ -5,7 +5,7 @@ import s from './MainMenu.module.scss'
 function MainMenu() {
    return (
       <div className={s.menu}>
-         <ul className={s.menuList}>
+         <ul className={s.list}>
             <li className={s.menuItem}>
                <a className={s.menuLink} href="#">Квадроциклы</a>
             </li>

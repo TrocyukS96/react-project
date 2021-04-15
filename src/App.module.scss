@@ -1,16 +1,28 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(./assets/fonts/SFProDisplay-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
   list-style: none;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+
 }
 
 .mainApp {
   min-height: 100vh;
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
   max-width: 1171px;
   margin: 0 auto;
 }
-

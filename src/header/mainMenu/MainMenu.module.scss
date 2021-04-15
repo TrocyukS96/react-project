@@ -1,8 +1,23 @@
-.menu {
-   margin-top: 30px;
+@import './../../abstracts/variables.scss';
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../assets/fonts/SFProDisplay-Regular.woff);
+   font-weight: 400;
+   font-style: normal;
 }
 
-.menuList {
+
+
+.menu {
+   margin-top: 46px;
+
+   background-color: $baseColor;
+}
+
+.list {
+   padding: 15px 0;
+
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -10,6 +25,17 @@
    text-align: center;
 }
 
-.menuItem {
-   padding: 15px 0;
+.menuItem {}
+
+.menuLink {
+
+   font-family: 'SF Pro Display';
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+
+   text-align: left;
+
 }
