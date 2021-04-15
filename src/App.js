@@ -9,7 +9,7 @@ import ProductCard from "./components/pages/productCatalog/ProductCard";
 
 function App() {
     return (
-        <div className={s.App}>
+        <div className={s.mainApp}>
             <div className={s.container}>
                 <Header />
                 <Main />
