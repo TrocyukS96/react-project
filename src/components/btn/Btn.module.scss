@@ -1,8 +1,10 @@
+@import "./../../abstracts/variables.scss";
+
 .btn {
-   width: 140px;
-   height: 50px;
-   background-color: rgb(248, 109, 109);
+   border: none;
+   letter-spacing: 2px;
+   background-color:$accentColor;
    color: #fff;
 
-   font-size: 25px;
+   
 }

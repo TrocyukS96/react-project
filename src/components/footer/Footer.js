@@ -8,54 +8,75 @@ import Yt from "./../../assets/image/social-icons/youtube .svg";
 import s from './Footer.module.scss';
 import Btn from "../btn/Btn";
 import Input from "../input/Input";
+import FooterItem from "./FooterItem";
 
 function Footer() {
   return (
+
     <div className={s.footer}>
 
-          <div>
+      <div className ={s.container}>
 
-            <p> 
-                Подпишитесь на нашу рассылку 
-                и узнавайте о акция быстрее
-            </p>
-            <Input type="text" placeholder="Введите ваш email"/>
-            
+
+        <div className={s.footerSubscribe}>
+
+          <p className={s.footerText}> 
+            Подпишитесь на нашу рассылку 
+            и узнавайте о акция быстрее
+          </p>
+
+          <form className={s.form}>
+            <Input type="text" placeholder="Введите ваш email" />
+        
 
             <Btn text="Отпрвить" 
-            
-            style={{background: "#1C62CD"}} />
-          </div>
+              style={{padding: "10px 15px", fontSize: "11px", }} />
 
-        <div>
-          <h4>Информация</h4>
-          <ul >
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Магазины</a></li>
-          </ul>
-          <a href="#">Договор оферты</a>
+          </form>
+
         </div>
 
-      <div>
-       <h4>Интернет-магазин</h4>
-       <ul>
-         <li><a href="#">Доставка и самов</a></li>
-         <li><a href="#">Оплата</a></li>
-         <li><a href="#"> Возврат-обмен</a></li>
-         <li><a href="#">Новости</a></li>
-       </ul>
-       <a href="#">Политика обработки персональных данных</a>
+        <FooterItem title="Информация" item1="О компании" item2="Контакты" item3="Акции" item4="Магазины" link="Договор оферты"/>
+
+        <FooterItem title="Интернет-магазин" item1="Доставка и самов" item2="Оплата" item3="Возврат-обмен" item4="Новости" 
+         link="Политика обработки персональных данных"/>
+
+
+
+        <div className={s.footerSocial}>
+
+          <ul className={s.list}>
+
+            <li className={s.item}>
+              <a className={s.link} href="#">
+                <img className={s.img} src={Inst} alt="текст"/>
+              </a>
+            </li>
+
+            <li className={s.item}>
+              <a className={s.link} href="#">
+                <img className={s.img} src={Vk} alt="текст"/>
+              </a>
+            </li>
+
+            <li className={s.item}>
+              <a className={s.link} href="#">
+                <img className={s.img} src={Fb} alt="текст"/>
+              </a>
+            </li>
+
+            <li className={s.item}>
+              <a className={s.link} href="#">
+                <img className={s.img} src={Yt} alt="текст"/>
+              </a>
+            </li>
+
+          </ul>  
+      
+        </div>
+
 
       </div>
-
-     <div>
-       <a href="#"><img src={Inst} alt="текст"/></a>
-       <a href="#"><img src={Vk} alt="текст"/></a>
-       <a href="#"><img src={Fb} alt="текст"/></a>
-       <a href="#"><img src={Yt} alt="текст"/></a>
-     </div>
 
     </div>
 

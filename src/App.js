@@ -15,8 +15,9 @@ function App() {
                 <Main />
                 <Catalog />
                 <ProductCard />
-                <Footer />
+                
             </div>
+            <Footer />
         </div>
     );
 }

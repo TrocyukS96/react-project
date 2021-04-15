@@ -1,3 +1,50 @@
+@import "./../../abstracts/variables.scss";
+
+.container{
+   max-width: 1171px;
+   margin: 0 auto;
+   display: flex;
+
+}
 .footer{
    display: flex;
+   background-color: $baseColor;
+}
+
+.footerSubscribe{
+   max-width: 295px;
+   margin-right: 165px;
+}
+.footerText{
+   font-size: 14px;
+   font-weight: 700;
+   margin: 40px 0 35px 0;
+}
+.form{
+   display: flex;
+   max-height: 33px;
+   margin: 0 0 90px 0;
+}
+
+
+
+
+
+
+
+
+.footerSocial{
+   margin: 85px 0 0 0;
+}
+.list{
+   display: flex;
+}
+.item{
+   margin: 0 0 0 30px;
+   &:nth-child(1){
+      margin: 0;
+   }
+}
+.link{
+   width: 100%;
 }
