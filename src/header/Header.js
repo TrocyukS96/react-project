@@ -1,11 +1,12 @@
 import MainMenu from "./mainMenu/MainMenu";
 import Nav from "./nav/Nav";
+import s from './Header.module.scss';
 
 
 
 function Header() {
   return (
-    <header className="header">
+    <header className={s.header}>
       <Nav />
       <MainMenu />
 
@@ -13,4 +14,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header

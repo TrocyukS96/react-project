@@ -1,11 +1,11 @@
 import React from "react";
-import './Logo.css';
+import s from './Logo.module.scss';
 import logo from "../../assets/image/logo/logo.svg";
 
 function Logo() {
     return (
-        <img className="logo" src={logo} alt="logo" />
+        <img className={s.logo} src={logo} alt="logo" />
     );
 }
 
-export default Logo;
+export default Logo

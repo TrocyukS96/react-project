@@ -4,19 +4,19 @@ import FilterTitle from "./../blokFilter/blockFilterComponents/filterTitle/Filte
 
 import BurgerLeft from "./../../assets/image/BlokInfo/burgerLeft.svg";
 import BurgerRight from "./../../assets/image/BlokInfo/burgerRight.svg";
-import './BlockInfo.css';
+import s from'./BlockInfo.module.scss';
 
 
 
 function BlockInfo() {
     return (
-        <div className="blok-info">
+        <div className={s.blokInfo}>
 
-            <div className="blok-info-link-wrap">
+            <div className={s.blokInfoLinkWrap}>
 
-                <a className="blok-info-link" href="#">Глвная</a>
+                <a className={s.blokInfoLink} href="#">Глвная</a>
 
-                <a  className="blok-info-link" href="#"> Гидроциклы </a>
+                <a  className={s.blokInfoLink} href="#"> Гидроциклы </a>
 
             </div>
 
@@ -24,28 +24,28 @@ function BlockInfo() {
             
                 style={{fontSize: "30px"}}/>
            
-            <div className="blok-info-filter">
+            <div className={s.blokInfoFilter}>
 
-                <div className="blok-info-fliter-left">
+                <div className={s.blokInfoFliterLeft}>
 
-                    <a className="blok-info-fliter-link">Полноприводные</a>
-                    <a className="blok-info-fliter-link">от 5000</a>
-                    <a className="blok-info-fliter-link">BRP</a>
-                    <a className="blok-info-fliter-link">еще</a>   
+                    <a className={s.bloIinfoFliterLink}>Полноприводные</a>
+                    <a className={s.blokInfoFliterLink}>от 5000</a>
+                    <a className={s.blokInfoFliterLink}>BRP</a>
+                    <a className={s.blokInfoFliterLink}>еще</a>
 
                 </div>
 
-                <div className="blok-info-fliter-right">
+                <div className={s.blokInfoFliterRight}>
 
-                    <select className="blok-info-select" size="1">
-                        <option className="blok-info-select">По популярности</option>
-                        <option className="blok-info-select">Random</option>
+                    <select className={s.blokInfoSelect} size="1">
+                        <option className={s.blokInfoSelect}>По популярности</option>
+                        <option className={s.blokInfoSelect}>Random</option>
                         
                     </select>
 
-                    <div className="blok-info-burger">
-                      <span className="blok-info-burger-left"><img src={BurgerLeft} alt="#" /></span>
-                      <span className="blok-info-burger-right"><img src={BurgerRight} alt="#" /></span>
+                    <div className={s.blokInfoBurger}>
+                      <span className={s.blokInfoBurgerLeft}><img src={BurgerLeft} alt="#" /></span>
+                      <span className={s.blokInfoBurgerRight}><img src={BurgerRight} alt="#" /></span>
                     </div>
 
                 </div>

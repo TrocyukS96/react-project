@@ -1,23 +1,23 @@
 import React from "react";
 
-import './BlockHeader.css';
+import s from './BlockHeader.module.scss';
 
 
 
 function BlockHeader(props) {
    return (
-      <div className="goods-header">
-         <h2 className="goods__title">{props.text}</h2>
-         <ul className="goods__menu">
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">запчасти</a></li>
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">моторы</a></li>
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">шины </a></li>
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">электроника</a></li>
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">инструменты</a></li>
-            <li className="goods__menu-item"><a href="#" className="goods__menu-link">аксессуары </a></li>
+      <div className={s.goodsHeader}>
+         <h2 className={s.goodsTitle}>{props.text}</h2>
+         <ul className={s.goodsMenu}>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>запчасти</a></li>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>моторы</a></li>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>шины </a></li>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>электроника</a></li>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>инструменты</a></li>
+            <li className={s.goodsMenuItem}><a href="#" className={s.goodsMenuLink}>аксессуары </a></li>
          </ul>
       </div>
-   )
+   );
 }
 
-export default BlockHeader;
+export default BlockHeader

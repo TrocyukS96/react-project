@@ -5,13 +5,13 @@ import Inst from "./../../assets/image/social-icons/instagram.svg";
 import Vk from "./../../assets/image/social-icons/vk .svg";
 import Fb from "./../../assets/image/social-icons/facebook .svg";
 import Yt from "./../../assets/image/social-icons/youtube .svg";
-import './Footer.css';
+import s from './Footer.module.scss';
 import Btn from "../btn/Btn";
 import Input from "../input/Input";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className={s.footer}>
 
           <div>
 

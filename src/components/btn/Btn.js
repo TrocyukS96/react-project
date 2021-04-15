@@ -1,9 +1,9 @@
 
-import './Btn.css';
+import s from './Btn.module.scss';
 
 function Btn(props) {
   return (
-    <button className="btn" style={props.style} >{props.text}</button>
+    <button className={s.btn} style={props.style} >{props.text}</button>
   );
 }
 

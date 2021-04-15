@@ -1,4 +1,4 @@
-.goods__title {
+.goodsTitle {
    padding-bottom: 30px;
 
    font-weight: 700;
@@ -7,22 +7,22 @@
 
 }
 
-.goods__menu {
+.goodsMenu {
    padding-bottom: 35px;
 
    display: flex;
 }
 
-.goods__menu-item {
+.goodsMenuItem {
    padding-right: 50px;
 
 }
 
-.goods__menu-item:last-child {
+.goodsMenuItem:last-child {
    padding-right: 0;
 }
 
-.goods__menu-link {
+.goodsMenuLink {
    font-weight: 500;
    font-size: 15px;
    line-height: 18px;

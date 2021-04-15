@@ -4,7 +4,7 @@
     border: 1px solid blue;
 }
 
-.stock-price {
+.stockPrice {
     /*font-family: Barlow;*/
     font-size: 27px;
     font-style: normal;
@@ -15,7 +15,7 @@
     margin-right: 10px;
 }
 
-.stock-price-normal {
+.stockPriceNormal {
     /*font-family: Barlow;*/
     font-size: 14px;
     font-style: normal;
@@ -25,32 +25,31 @@
     margin-right: 5px;
 }
 
-.stock-price-normal-wrapper {
+.stockPriceNormalWrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: -35px;
 }
 
-.stock-price::after {
+.stockPrice::after {
     content: " ₽";
 }
 
-.stock-price-normal::after {
+.stockPriceNormal::after {
     content: " ₽";
 }
 
-.stock-img-item-wrapper {
+.stockImgItemWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stock-time-action {
+.stockTimeAction {
     /*height: 99px;*/
     /*width: 264px;*/
     background-color: #F0F0F4;
-;
 }
 
 

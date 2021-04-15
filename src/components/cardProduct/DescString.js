@@ -1,6 +1,6 @@
 import React from "react";
 
-import './DescString.css';
+import s from './DescString.module.scss';
 
 
 
@@ -8,11 +8,11 @@ import './DescString.css';
 function DescString(props) {
   return (
 
-    <div className="descString">
+    <div className={s.descString}>
 
-      <span className="descString-span">{props.text1}</span>
+      <span className={s.descStringSpan}>{props.text1}</span>
 
-      <span className="descString-span">{props.text2}</span>
+      <span className={s.descStringSpan}>{props.text2}</span>
 
 
     </div>

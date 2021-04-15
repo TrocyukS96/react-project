@@ -3,31 +3,31 @@ span{
     display: block;
 }
 
-.card-product-contener{
+.cardProductContener{
     
     display: flex;
     
 }
 
-.card-product-left-wrap{
+.cardProductLeftWrap{
     width: 100%;
 }
-.card-product{
+.cardProduct{
     max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card-product-span-top{
+.cardProductSpanTop{
     align-self: flex-start;
     background: #1C62CD;
 }
 
 
 
-.card-product-right-wrap{
+.cardProductRightWrap{
     width: 100%;
 }
-.card-product-info-img{
+.cardProductInfoImg{
     display: flex;
 }

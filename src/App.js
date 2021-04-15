@@ -1,4 +1,4 @@
-import './App.css';
+import s from './App.module.scss';
 
 import Header from './header/Header';
 import Footer from './components/footer/Footer';
@@ -9,8 +9,8 @@ import ProductCard from "./components/pages/productCatalog/ProductCard";
 
 function App() {
     return (
-        <div className="App">
-            <div className="container">
+        <div className={s.mainApp}>
+            <div className={s.container}>
                 <Header />
                 <Main />
                 <Catalog />
@@ -21,4 +21,4 @@ function App() {
     );
 }
 
-export default App;
+export default App

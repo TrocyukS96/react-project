@@ -1,6 +1,6 @@
 import React from "react";
 
-import './PointerPage.css';
+import s from './PointerPage.module.scss';
 import PointerPageSpan from "./PointerPageSpan";
 
 
@@ -9,7 +9,7 @@ import PointerPageSpan from "./PointerPageSpan";
 function PointerPage() {
   return (
 
-    <div className="PointerPage-wrap">
+    <div className={s.pointerPageWrap}>
 
       <PointerPageSpan text="Главная" style={{margin: "0 10px 0 0"}}/>
       

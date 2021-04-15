@@ -1,9 +1,9 @@
 
-import './BtnSearch.css';
+import s from './BtnSearch.module.scss';
 
 function BtnSearch(props) {
   return (
-    <button className="btn-search">{props.btnName}</button>
+    <button className={s.btnSearch}>{props.btnName}</button>
 
   );
 }

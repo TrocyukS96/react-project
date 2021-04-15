@@ -1,6 +1,6 @@
 import React from "react";
 
-import './PointerPageSpan.css';
+import s from './PointerPageSpan.module.scss';
 
 
 
@@ -10,7 +10,7 @@ function PointerPageSpan(props) {
 
     
 
-      <a href="#" className="PointerPageSpan" style={props.style}>{props.text}</a>
+      <a href="#" className={s.pointerPageSpan} style={props.style}>{props.text}</a>
 
       
 

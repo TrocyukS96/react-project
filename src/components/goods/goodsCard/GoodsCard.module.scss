@@ -1,4 +1,4 @@
-.goods__slider-card {
+.goodsSliderCard {
    width: 271px;
    height: 403px;
 
@@ -13,23 +13,23 @@
    align-items: center;
 }
 
-.goods__slider-card button {
+.goodsSliderCard button {
    align-self: flex-end;
 
 }
 
-.goods__discr {
+.goodsDiscr {
    text-align: center;
 }
 
-.goods__price {
+.goodsPrice {
 
    font-weight: 700;
    font-size: 30px;
    line-height: 36px;
 }
 
-.goods__sale-img {
+.goodsSaleImg {
    position: absolute;
    top: 0;
    left: 0;

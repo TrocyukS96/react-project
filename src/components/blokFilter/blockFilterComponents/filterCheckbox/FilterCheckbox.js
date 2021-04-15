@@ -1,11 +1,11 @@
 import React from "react";
 
-import './FilterCheckbox.css';
+import s from './FilterCheckbox.module.scss';
 
 
 function FilterCheckbox(props) {
     return (
-      <div className="checkbox">
+      <div className={s.checkbox}>
         <input  type="checkbox"/> <span>{props.text} </span>
   
       </div>

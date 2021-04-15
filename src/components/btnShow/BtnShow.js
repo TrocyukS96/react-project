@@ -1,12 +1,12 @@
 import React from "react";
 
-import './BtnShow.css';
+import s from './BtnShow.module.scss';
 
 
 
 function BtnShow(props) {
    return (
-      <button className="btn-show">{props.text}</button>
+      <button className={s.btnShow}>{props.text}</button>
    )
 }
 

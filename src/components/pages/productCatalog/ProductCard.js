@@ -1,6 +1,6 @@
 import React from "react";
 
-import './ProductCard.css';
+import s from './ProductCard.module.scss';
 import CardProduct from "../../cardProduct/CardProduct";
 import DescString from "../../cardProduct/DescString";
 import PointerPage from "../../pointerPage/PointerPage";

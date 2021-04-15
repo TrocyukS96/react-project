@@ -1,33 +1,33 @@
 import React from "react";
-import './Pickup.css';
+import s from './Pickup.module.scss';
 import pickupSearchImg from "../../../../assets/image/pickup/pickupSearchImg.svg"
 import pickupBuyImg from "../../../../assets/image/pickup/pickupBuyImg.svg"
 
 
 function Pickup() {
     return (
-        <div className="pickupContainer">
-            <div className="pickupSearch">
+        <div className={s.pickupContainer}>
+            <div className={s.pickupSearch}>
                 Магазин
                 <form>
                     <input type="text" placeholder="" />
                     <button type="submit"><img src={pickupSearchImg} alt="search" /></button>
                 </form>
             </div>
-            <div className="pickupRadioWrapper">
-                <div className="radio">
+            <div className={s.pickupRadioWrapper}>
+                <div className={s.radio}>
                     <input  name="choosePickup" type="radio" />Забрать сегодня
                     <input  name="choosePickup" type="radio" />Заберу в течении недели
                 </div>
             </div>
-            <div className="pickupInfoBuy">
+            <div className={s.pickupInfoBuy}>
                 <div>Адрес</div>
                 <div>Режим работы</div>
                 <div>Доступно</div>
                 <div>Количество</div>
                 <div>#</div>
                 <div>Москва, ул. Науки 25</div>
-                <div className="pickupSubGrid">
+                <div className={s.pickupSubGrid}>
                     <div>пн-сб:</div>
                     <div>08:00-19:00</div>
                     <div>вс:</div>
@@ -37,7 +37,7 @@ function Pickup() {
                 <div>1</div>
                 <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
                 <div>Москва, ул. Южная 134</div>
-                <div className="pickupSubGrid">
+                <div className={s.pickupSubGrid}>
                     <div>пн-сб:</div>
                     <div>08:00-19:00</div>
                     <div>вс:</div>
@@ -49,7 +49,7 @@ function Pickup() {
                 <div>Санкт-Петербург,
                     ул. Красная 19
                 </div>
-                <div className="pickupSubGrid">
+                <div className={s.pickupSubGrid}>
                     <div>пн-сб:</div>
                     <div>08:00-19:00</div>
                     <div>вс:</div>
@@ -59,7 +59,7 @@ function Pickup() {
                 <div>0</div>
                 <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
                 <div>Киев, ул Шевченко 167</div>
-                <div className="pickupSubGrid">
+                <div className={s.pickupSubGrid}>
                     <div>пн-сб:</div>
                     <div>08:00-19:00</div>
                     <div>вс:</div>
