@@ -2,21 +2,20 @@ import React from "react";
 
 import s from './Main.module.scss';
 import CardBaner from "./cardBaner/CardBaner";
-import SliderBanner from "../../sliderBanner/SliderBanner";
-import Stock from "../../stock/Stock";
+
 import BlockSearch from "../../blockSearch/BlockSearch";
 import CardDetails from "./cardDetails/CardDetails";
 import Goods from "../../goods/Goods";
+import Banner from "./banner/Banner";
 
 
 
 function Main() {
     return (
         <div className={s.main}>
-            <div>
-                <SliderBanner />
-                <Stock />
-            </div>
+
+            <Banner/>
+
             <BlockSearch />
 
             <div className={s.cardDetailsInner}>
