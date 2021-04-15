@@ -1,6 +1,6 @@
 import React from "react";
 
-import './CardProduct.css';
+import s from './CardProduct.module.scss';
 import CardProductImg from "./../../assets/image/cardProduct/product.svg";
 import Health from "./../../assets/image/cardProduct/Group.svg";
 import Vector from "./../../assets/image/cardProduct/Vector.svg";
@@ -14,58 +14,56 @@ import Btn from "../btn/Btn";
 function CardProduct() {
   return (
 
-    <div className="card-product-contener">
+    <div className={s.cardProductContener}>
 
-      <div className="card-product-left-wrap">
+      <div className={s.cardProductLeftWrap}>
 
-        <div className="card-product">
+        <div className={s.cardProduct}>
 
-          <span className="card-product-span-top">SALE</span>
+          <span className={s.cardProductSpanTop}>SALE</span>
 
-          <img className="card-product-img" src={CardProductImg} alt="#" />
+          <img className={s.cardProductImg} src={CardProductImg} alt="#" />
           
-          <span className="card-product-span-discount">1 200 476 ₽</span>
+          <span className={s.cardProductSpanDiscount}>1 200 476 ₽</span>
+          <span className={s.cardProductSpanPrice}>1 110 475 ₽</span>
 
-          <span className="card-product-span-price">1 110 475 ₽</span>
-
-          <span className="card-product-span-price">Нашли дешевле? Снизим цену!</span>
+          <span className={s.cardProductSpanPrice}>Нашли дешевле? Снизим цену!</span>
 
         </div>
 
 
       </div>
 
-      <div className="card-product-right-wrap">
+      <div className={s.cardProductRightWrap}>
 
-        <div className="card-product-info">
+        <div className={s.cardProductInfo}>
           
-          <h4 className="card-product-name">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
+          <h4 className={s.cardProductName}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
           
-          <span className="card-product-subtitle">Код товара: 	366666-2 </span>
+          <span className={s.cardProductSubtitle}>Код товара: 	366666-2 </span>
 
-          <div className="card-product-info-img">
+          <div className={s.cardProductInfoImg}>
             
-            <img src={Health}/>
+            <img src={Health} alt="#"/>
 
-            <img src={Vector}/>
+            <img src={Vector} alt="#"/>
 
-            <div className="card-product-info-img">
+            <div className={s.cardProductInfoImg}>
               <img src={ Star} alt="#"/>
               <img src={ Star} alt="#"/>
               <img src={ Star} alt="#"/>
               <img src={ Star} alt="#"/>
               <img src={ Star} alt="#"/>
-
             </div>
 
 
           </div>
 
-          <a className="card-product-info-link" href="#">Характеристики</a>
-          <a className="card-product-info-link" href="#">Наличие в магазине</a>
+          <a className={s.cardProductInfoLink} href="#">Характеристики</a>
+          <a className={s.cardProductInfoLink} href="#">Наличие в магазине</a>
 
 
-          <div className="card-product-description">
+          <div className={s.cardProductDescription}>
             <DescString text1="Производитель" text2="Канада"/>
             <DescString text1="Количество мест, шт: " text2="3"/>
             <DescString text1="Мощность, л.с." text2="155"/>

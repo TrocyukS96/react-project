@@ -1,6 +1,6 @@
 import React from "react";
 
-import './FilterTitle.css';
+import s from './FilterTitle.module.scss';
 
 
 function FilterTitle(props) {

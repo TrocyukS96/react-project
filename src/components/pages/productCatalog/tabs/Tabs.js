@@ -1,10 +1,10 @@
 import React from "react";
-import './Tabs.css';
+import s from './Tabs.module.scss';
 
 
-function  Tabs() {
+function Tabs() {
     return (
-        <div className="tabs">
+        <div className={s.tabs}>
             <a href="#"><span className="tabsText">О товаре</span></a>
             <a href="#"><span className="tabsText">Характеристики</span></a>
             <a href="#"><span className="tabsText">Отзывы</span></a>
@@ -14,7 +14,7 @@ function  Tabs() {
             <a href="#"><span className="tabsText">Гарантия</span></a>
         </div>
 
-    )
+    );
 }
 
 export default Tabs

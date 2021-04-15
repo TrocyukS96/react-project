@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Catalog.css';
+import s from './Catalog.module.scss';
 import BlockInfo from "./../../blockInfo/BlockInfo";
 import BlockFilter from "./../../blokFilter/BlockFilter";
 import CardCatalog from "./cardCatalog/CardCatalog";
@@ -11,7 +11,7 @@ function Catalog() {
         <div>
             <BlockInfo />
             <BlockFilter />
-            <div className="CardCatalogContainer">
+            <div className={s.cardCatalogContainer}>
                 <CardCatalog text="Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango" text2="1 049 500 ₽" />
                 <CardCatalog text="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic" text2="1 100 475 ₽" />
                 <CardCatalog text="Гидроцикл BRP SeaDoo GTR 230hp X California green " text2="1 323 700 ₽" />

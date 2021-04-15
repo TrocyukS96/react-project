@@ -1,0 +1,76 @@
+.navigation {
+   padding-top: 50px;
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   position: relative;
+}
+
+.navigationLeftList {
+   display: flex;
+   align-items: center;
+}
+
+.navigationLeftItem {
+   padding-right: 50px;
+}
+
+.navigationLeftItem:last-child {
+   padding-right: 0;
+}
+
+.navigationRight {
+   display: flex;
+   align-items: center;
+}
+
+.adress {
+   padding-right: 80px;
+   position: relative;
+}
+
+//.adress::before {
+//   content: "";
+//   width: 26px;
+//   height: 30px;
+//
+//   background: url(/src/assets/image/icons/location.png) no-repeat;
+//
+//   position: absolute;
+//   top: -9px;
+//   left: -26px;
+//}
+
+.headerIcons {
+   display: flex;
+   align-items: center;
+
+
+}
+
+.headerIcon {
+   padding-right: 10px;
+}
+
+.headerIcon:last-child {
+   padding-right: 0;
+}
+
+.navigationLeft {
+
+}
+
+.navigationLeftLink {
+
+}
+
+.adressLink {
+
+}
+
+.headerIconImg {
+
+}

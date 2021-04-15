@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Main.css';
+import s from './Main.module.scss';
 import CardBaner from "./cardBaner/CardBaner";
 import SliderBanner from "../../sliderBanner/SliderBanner";
 import Stock from "../../stock/Stock";
@@ -12,14 +12,14 @@ import AdditionalGoods from "../../additionalGoods/AdditionalGoods";
 
 function Main() {
     return (
-        <div className="main">
+        <div className={s.main}>
             <div>
                 <SliderBanner />
                 <Stock />
             </div>
             <BlockSearch />
 
-            <div className="cardDetailsInner">
+            <div className={s.cardDetailsInner}>
                 <CardDetails text="Квадроциклы" />
                 <CardDetails text="Гидроциклы" />
                 <CardDetails text="Катера" />

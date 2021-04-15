@@ -2,12 +2,12 @@
 import Btn from '../btn/Btn';
 import BtnSearch from './../btn/BtnSearch';
 import Input from '../input/Input';
-import './BlockSearch.css';
+import s from'./BlockSearch.module.scss';
 
 
 function BlockSearch() {
     return (
-        <div className="block-search">
+        <div className={s.blockSearch}>
 
             <BtnSearch btnName="Поиск по номеру"/>
             <BtnSearch btnName="Поиск по марке"/>

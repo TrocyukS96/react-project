@@ -1,34 +1,34 @@
 
-import './MainMenu.css'
+import s from './MainMenu.module.scss'
 
 
 function MainMenu() {
    return (
-      <div className="menu">
-         <ul className="menu__list">
-            <li className="menu__item">
-               <a className="menu__link" href="#">Квадроциклы</a>
+      <div className={s.menu}>
+         <ul className={s.menuList}>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Квадроциклы</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Катера</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Катера</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Гидроциклы</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Гидроциклы</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Лодки</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Лодки</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Вездеходы</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Вездеходы</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Снегоходы</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Снегоходы</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Двигатели</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Двигатели</a>
             </li>
-            <li className="menu__item">
-               <a className="menu__link" href="#">Запчасти</a>
+            <li className={s.menuItem}>
+               <a className={s.menuLink} href="#">Запчасти</a>
             </li>
 
          </ul>
@@ -36,4 +36,4 @@ function MainMenu() {
    );
 }
 
-export default MainMenu;
+export default MainMenu
