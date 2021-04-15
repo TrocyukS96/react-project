@@ -7,6 +7,12 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../assets/fonts/SFProDisplay-Medium.woff);
+   font-weight: 500;
+   font-style: normal;
+}
 
 a {
    text-decoration: none;
@@ -47,8 +53,11 @@ a {
 }
 
 .navigationRight {
+
+
    display: flex;
    align-items: center;
+
 }
 
 .adress {
@@ -56,19 +65,21 @@ a {
    position: relative;
 }
 
-//.adress::before {
-//   content: "";
-//   width: 26px;
-//   height: 30px;
-//
-//   background: url(/src/assets/image/icons/location.png) no-repeat;
-//
-//   position: absolute;
-//   top: -9px;
-//   left: -26px;
-//}
+.adress::before {
+   content: "";
+   width: 28px;
+   height: 30px;
+
+   background: url('./../../assets/image/icons/location.svg') no-repeat;
+
+   position: absolute;
+   top: -9px;
+   left: -30px;
+}
 
 .icons {
+   padding-right: 15px;
+
    display: flex;
    align-items: center;
 
@@ -81,4 +92,36 @@ a {
 
 .icon:last-child {
    padding-right: 0;
+   position: relative;
+
+
+}
+
+.icon:last-child::after {
+   content: "1";
+   width: 20px;
+   height: 20px;
+
+   display: block;
+
+   background-color: $accentColor;
+   border-radius: 50%;
+
+   position: absolute;
+   bottom: 0;
+   right: -15;
+
+   color: #fff;
+   font-family: 'SF Pro Display';
+   font-size: 10px;
+   font-weight: 500;
+   line-height: 20px;
+   letter-spacing: 0em;
+   text-align: center;
+
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+
 }
