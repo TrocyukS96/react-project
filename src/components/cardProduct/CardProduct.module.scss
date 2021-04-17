@@ -1,4 +1,6 @@
 
+@import "./../../abstracts/variables.scss";
+
 span{
     display: block;
 }
@@ -6,7 +8,7 @@ span{
 .cardProductContener{
     
     display: flex;
-    
+    margin: 45px 0 85px 0;
 }
 
 .cardProductLeftWrap{
@@ -17,17 +19,84 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
-.cardProductSpanTop{
-    align-self: flex-start;
-    background: #1C62CD;
+.SpanTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $accentColor;
+    padding: 15px 25px;
+    color: #fff;
 }
 
+.cardProductImg{
+    margin-top: 65px;
+}
 
+.SpanDiscount{
+    position: relative;
+    font-size: 30px;
+    color: $textColor;
+    margin-top: 20px;
+    &::before{
+        content: "";
+        border-bottom: 2px solid $textColor;
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        transform: rotate(-8deg);
+    }
+}
+
+.SpanPrice{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.cardProductSpan{
+    margin-top: 20px;
+    color:$accentColor;
+    font-size: 15px;
+}
 
 .cardProductRightWrap{
     width: 100%;
 }
 .cardProductInfoImg{
     display: flex;
+}
+
+.ProductName{
+    font-size: 30px;
+}
+.Subtitle{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.InfoImg{
+    margin-top: 20px;
+    display: flex;
+}
+
+
+.ProductDescription{
+    margin-top: 50px;
+}
+
+.InfoLinkWrap{
+    display: flex;
+}
+.InfoLink{
+    margin-right: 35px;
+    font-size: 20px;
+    transition: .3s;
+    &:nth-last-child(1){
+        margin-right: 0;
+    }
+    &:hover{
+        font-weight: 700;
+        border-bottom: 2px solid $accentColor;
+    }
 }

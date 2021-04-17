@@ -1,8 +1,19 @@
-.btn {
-   width: 140px;
-   height: 50px;
-   background-color: rgb(248, 109, 109);
-   color: #fff;
+@import "./../../abstracts/variables.scss";
 
-   font-size: 25px;
+.btnSearch{
+  border: none;
+  margin-right: 30px;
+  padding: 10px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: .5s;
+  font-size: 20px;
+  font-weight: 400;
+  &:hover{
+     background-color: $baseColor;
+     font-weight: 700;
+  }
+  &:last-child{
+    margin: 0;
+  }
 }

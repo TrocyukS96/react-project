@@ -15,7 +15,7 @@ function ProductCard() {
 
         <div>
             <PointerPage />
-            <DescString />
+            
             <CardProduct />
             <div>
           <Tabs />

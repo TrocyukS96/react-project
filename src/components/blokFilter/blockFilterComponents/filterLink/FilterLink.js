@@ -6,7 +6,8 @@ import s from './FilterLink.module.scss';
 
 function FilterLink(props) {
   return (
-      <a href="#">Показать ещё </a>
+    
+      <a style={props.style} href="#">Показать ещё </a>
     
     
     

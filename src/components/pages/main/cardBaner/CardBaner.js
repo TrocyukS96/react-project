@@ -7,6 +7,7 @@ import Btn from "../../../btn/Btn";
 function CardBaner() {
     return (
         <div className= {s.baner}>
+
             <div className={s.banerImgWrap}>
                 <img className={s.banerImg} src={carOne} alt="#" />
                 <img className={s.banerImg} src={carTwo} alt="#" />
@@ -17,7 +18,8 @@ function CardBaner() {
 
             <Btn text="Посмотреть Всё"
             
-            style={{background: "#FFF", maxWidth: "285px", textAlign: "center", fontSize: "24px", padding: "5px 40px" }}/>
+            style={{background: "#FFF", textAlign: "center", fontSize: "24px", padding: "20px 40px", 
+            textTransform: "uppercase",color:"#2F3035", fontWeight: "700" }}/>
 
         </div>
     );

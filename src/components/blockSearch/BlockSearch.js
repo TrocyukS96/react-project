@@ -9,16 +9,23 @@ function BlockSearch() {
     return (
         <div className={s.blockSearch}>
 
-            <BtnSearch btnName="Поиск по номеру"/>
-            <BtnSearch btnName="Поиск по марке"/>
-            <BtnSearch btnName="Поиск по названию товара"/>
+            <div className={s.btnSearh}>
+                <BtnSearch btnName="Поиск по номеру"/>
+                <BtnSearch btnName="Поиск по марке"/>
+                <BtnSearch btnName="Поиск по названию товара"/>
 
-            <form>
-                <Input type="text" placeholder="Введите марку"/>
+            </div>
+
+           
+
+            <form className={s.blockForm}>
+                <Input type="text" placeholder="Введите марку"
+                
+                style={{width: "100%", height: "50px", backgroundColor: "#F0F0F4" }}/>
                 
                 <Btn text="Искать"
                 
-                style={{background: "#1C62CD"}}  />
+                style={{background: "#1C62CD", position: "absolute", right: "0", padding: "16px 40px", fontSize: "14px", fontWeight: "700" }}  />
                 
             </form>
 

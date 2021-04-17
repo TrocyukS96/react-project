@@ -10,9 +10,9 @@ function DescString(props) {
 
     <div className={s.descString}>
 
-      <span className={s.descStringSpan}>{props.text1}</span>
+      <span className={s.StringSpan}>{props.text1}</span>
 
-      <span className={s.descStringSpan}>{props.text2}</span>
+      <span className={s.Span}>{props.text2}</span>
 
 
     </div>

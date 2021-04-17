@@ -20,14 +20,14 @@ function CardProduct() {
 
         <div className={s.cardProduct}>
 
-          <span className={s.cardProductSpanTop}>SALE</span>
+          <span className={s.SpanTop}>SALE</span>
 
           <img className={s.cardProductImg} src={CardProductImg} alt="#" />
           
-          <span className={s.cardProductSpanDiscount}>1 200 476 ₽</span>
-          <span className={s.cardProductSpanPrice}>1 110 475 ₽</span>
+          <span className={s.SpanDiscount}>1 200 476 ₽</span>
+          <span className={s.SpanPrice}>1 110 475 ₽</span>
 
-          <span className={s.cardProductSpanPrice}>Нашли дешевле? Снизим цену!</span>
+          <span className={s.cardProductSpan}>Нашли дешевле? Снизим цену!</span>
 
         </div>
 
@@ -38,15 +38,15 @@ function CardProduct() {
 
         <div className={s.cardProductInfo}>
           
-          <h4 className={s.cardProductName}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
+          <h4 className={s.ProductName}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
           
-          <span className={s.cardProductSubtitle}>Код товара: 	366666-2 </span>
+          <span className={s.Subtitle}>Код товара: 	366666-2 </span>
 
-          <div className={s.cardProductInfoImg}>
-            
-            <img src={Health} alt="#"/>
-
+          <div className={s.InfoImg}>
+                        
             <img src={Vector} alt="#"/>
+
+            <img src={Health} alt="#"/>
 
             <div className={s.cardProductInfoImg}>
               <img src={ Star} alt="#"/>
@@ -59,20 +59,29 @@ function CardProduct() {
 
           </div>
 
-          <a className={s.cardProductInfoLink} href="#">Характеристики</a>
-          <a className={s.cardProductInfoLink} href="#">Наличие в магазине</a>
+         
+          <div className={s.ProductDescription}>
 
+            <div className={s.InfoLinkWrap}>
 
-          <div className={s.cardProductDescription}>
+              <a className={s.InfoLink} href="#">Характеристики</a>
+
+              <a className={s.InfoLink} href="#">Наличие в магазине</a>
+              
+            </div>  
+            
+            
             <DescString text1="Производитель" text2="Канада"/>
             <DescString text1="Количество мест, шт: " text2="3"/>
             <DescString text1="Мощность, л.с." text2="155"/>
             <DescString text1="Тип двигателя" text2="Бензиновый"/>
             <DescString text1="Год выпуска" text2="2018"/>
-            <FilterLink/>
+
+            <FilterLink style={{margin: "25px 0 0 0", color: "#1C62CD"}}/>
           </div>
           <Btn    text="Купить" 
-                     style={{background: "#1C62CD", padding: "16px 55px", margin: "0 10px 0 0" }} />
+              style={{background: "#1C62CD", padding: "16px 55px", margin: "45px 0 0 0", fontSize: "14px",
+              textTransform: "uppercase" }} />
 
         </div>
 
