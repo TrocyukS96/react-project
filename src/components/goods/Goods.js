@@ -3,7 +3,8 @@ import BtnShow from "../btnShow/BtnShow";
 import PointerPageSpan from "../pointerPage/PointerPageSpan";
 import BlockHeader from './blockHeader/BlockHeader';
 import s from './Goods.module.scss';
-import Slider from './slider/Slider';
+import Slider from "./slider/Slider";
+
 
 
 
@@ -11,7 +12,7 @@ function Goods(props) {
    return (
       <div className={s.goods}>
          <BlockHeader text="Популярные товары"/>
-         <Slider />
+         <Slider/>
           {props.button &&
               <BtnShow text="Показать ещё" />
           }

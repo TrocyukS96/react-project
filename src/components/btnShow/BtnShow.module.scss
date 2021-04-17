@@ -1,21 +1,26 @@
+@import './../../abstracts/variables.scss';
+@import './../../abstracts/mixins.scss';
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('./../../assets/fonts/SFProDisplay-Regular.woff');
+   font-weight: 400;
+   font-style: normal;
+}
+
 .btnShow {
    margin: 35px auto;
-
-   display: flex;
-   justify-content: center;
-   align-items: center;
 
    height: 50px;
    width: 252px;
 
-   background-color: #F0F0F4;
+   @include flex-edit(center, center);
 
-   font-size: 15px;
-   line-height: 18px;
+   background-color: $baseColor;
+
+   @include text-edit('SF Pro Display', 400, 0.9375rem, 1.2);
    letter-spacing: 0.12em;
    text-transform: uppercase;
-
-   color: #2F3035;
    text-align: center;
-
+   color: $textColor;
 }

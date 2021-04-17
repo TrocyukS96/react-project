@@ -1,0 +1,35 @@
+.sliderBanner {
+
+   .swiper {
+      width: 920px;
+
+      & .swiper-pagination {
+         bottom: 20px;
+         padding-bottom: 10px;
+      }
+   }
+
+   .swiper-wrapper {
+      padding-inline-start: 0;
+   }
+
+   .swiper-button-prev,
+   .swiper-button-next {
+      color: aliceblue;
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: #FFFFFF;
+   }
+
+   .swiper-pagination-bullet {
+      background-color: rgb(14, 13, 13);
+      border: 2px solid #fff;
+   }
+
+   .swiper-button-next,
+   .swiper-container-rtl .swiper-button-prev {
+      right: 60px;
+      left: auto;
+   }
+}

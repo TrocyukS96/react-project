@@ -1,36 +1,73 @@
-.goodsSliderCard {
-   width: 271px;
-   height: 403px;
+@import './../../../abstracts/variables.scss';
+@import './../../../abstracts/mixins.scss';
 
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../../assets/fonts/SFProDisplay-Bold.woff);
+   font-weight: 700;
+   font-style: normal;
+}
+
+.goodsSliderCard {
+
+
+   @include flex-edit(space-between, center);
 
    position: relative;
 
    border: 2px solid #CDCDCD;
-
-   align-items: center;
 }
 
-.goodsSliderCard button {
-   align-self: flex-end;
-
+.goodsImg {
+   margin-top: 52px;
+   margin-bottom: 14px;
 }
 
 .goodsDiscr {
+   margin-bottom: 25px;
+
+   text-align: center;
+
+   @include text-edit('SF Pro Display', 400, 1.125rem, 1.17);
+
    text-align: center;
 }
 
 .goodsPrice {
-
-   font-weight: 700;
-   font-size: 30px;
-   line-height: 36px;
+   @include text-edit('SF Pro Display', 700, 1.875rem, 1.2);
+   text-align: center;
 }
 
-.goodsSaleImg {
+.saleIcon {
    position: absolute;
    top: 0;
    left: 0;
+}
+
+.getFavorite {
+   display: inline-block;
+
+   position: absolute;
+   top: 0;
+   right: 0;
+
+}
+
+.bottomBtn {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.favoriteInput {
+   width: 1px;
+   height: 1px;
+   visibility: hidden;
 }

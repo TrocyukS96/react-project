@@ -1,5 +1,13 @@
+@import './../../abstracts/variables.scss';
+@import './../../abstracts/mixins.scss';
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url(./../../assets/fonts/SFProDisplay-Regular.woff);
+   font-weight: 400;
+   font-style: normal;
+}
+
 .goods {
    margin: 90px 0 30px 0;
 }
-
-.btnShow {}
