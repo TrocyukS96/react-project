@@ -13,9 +13,9 @@ function BlockFilter() {
     return (
         <div className={s.blokFilter}>
 
-            <div className={s.blokFilterTitle}>
-                <a href="#">Параметры </a>
-                <a href="#"> По марке </a>
+            <div className={s.FilterTitle}>
+                <a className={s.titleLink} href="#">Параметры </a>
+                <a className={s.titleLink} href="#"> По марке </a>
 
             </div>
             

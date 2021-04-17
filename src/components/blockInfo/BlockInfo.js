@@ -1,6 +1,7 @@
 import React from "react";
 
 import FilterTitle from "./../blokFilter/blockFilterComponents/filterTitle/FilterTitle";
+import PointerPageSpan from "./../pointerPage/PointerPageSpan";
 
 import BurgerLeft from "./../../assets/image/BlokInfo/burgerLeft.svg";
 import BurgerRight from "./../../assets/image/BlokInfo/burgerRight.svg";
@@ -12,40 +13,41 @@ function BlockInfo() {
     return (
         <div className={s.blokInfo}>
 
-            <div className={s.blokInfoLinkWrap}>
+            <div className={s.LinkWrap}>
 
-                <a className={s.blokInfoLink} href="#">Глвная</a>
-
-                <a  className={s.blokInfoLink} href="#"> Гидроциклы </a>
+                <PointerPageSpan text="Главная" />
+        
+                <PointerPageSpan text="Гидроциклы" />
 
             </div>
 
             <FilterTitle text="Гидроциклы"
             
-                style={{fontSize: "30px"}}/>
+            style={{fontSize: "30px", margin: "40px 0 0 0"}}/>
            
+
             <div className={s.blokInfoFilter}>
 
-                <div className={s.blokInfoFliterLeft}>
+                <div className={s.FliterLeft}>
 
-                    <a className={s.bloIinfoFliterLink}>Полноприводные</a>
-                    <a className={s.blokInfoFliterLink}>от 5000</a>
-                    <a className={s.blokInfoFliterLink}>BRP</a>
-                    <a className={s.blokInfoFliterLink}>еще</a>
+                    <a className={s.FliterLink}>Полноприводные</a>
+                    <a className={s.FliterLink}>от 5000</a>
+                    <a className={s.FliterLink}>BRP</a>
+                    <a className={s.FliterLink}>еще</a>
 
                 </div>
 
                 <div className={s.blokInfoFliterRight}>
 
-                    <select className={s.blokInfoSelect} size="1">
-                        <option className={s.blokInfoSelect}>По популярности</option>
-                        <option className={s.blokInfoSelect}>Random</option>
+                    <select className={s.Select} size="1">
+                        <option className={s.Option}>По популярности</option>
+                        <option className={s.Option}>Random</option>
                         
                     </select>
 
-                    <div className={s.blokInfoBurger}>
-                      <span className={s.blokInfoBurgerLeft}><img src={BurgerLeft} alt="#" /></span>
-                      <span className={s.blokInfoBurgerRight}><img src={BurgerRight} alt="#" /></span>
+                    <div className={s.InfoBurgers}>
+                      <span className={s.BurgerLeft}><img src={BurgerLeft} alt="#" /></span>
+                      <span className={s.BurgerRight}><img src={BurgerRight} alt="#" /></span>
                     </div>
 
                 </div>

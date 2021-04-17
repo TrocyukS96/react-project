@@ -1,7 +1,28 @@
+@import "./../../abstracts/variables.scss";
+
+
 .blokFilter{
    max-width: 300px;
+   margin-right: 10px;
 }
-
+.FilterTitle{
+  display: flex; 
+}
+.titleLink{
+   text-transform: uppercase;
+   margin-right: 40px;
+   font-size: 16px;
+   color:$lightGrey;
+   transition: .2s;
+   &:hover{
+      color:$textColor;
+      border-bottom: 2px solid $accentColor;
+      font-weight: 700;
+   }
+}
+.availability{
+   margin-top: 50px;
+}
 .checkboxWrap{
    display: flex;
    flex-wrap: wrap;
