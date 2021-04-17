@@ -15,59 +15,81 @@
    font-style: normal;
 }
 
-.goodsSliderCard {
+.sliderCard {
+   transition: all 0.3s ease;
 
+   &:hover {
+      .showProduct {
+         opacity: 0.9;
+      }
+   }
 
-   @include flex-edit(space-between, center);
+   .goodsImg {
+      margin-top: 52px;
+      margin-bottom: 14px;
+   }
 
-   position: relative;
+   .goodsDiscr {
+      margin-bottom: 25px;
 
-   border: 2px solid #CDCDCD;
-}
+      text-align: center;
 
-.goodsImg {
-   margin-top: 52px;
-   margin-bottom: 14px;
-}
+      @include text-edit('SF Pro Display', 400, 1.125rem, 1.17);
 
-.goodsDiscr {
-   margin-bottom: 25px;
+      text-align: center;
+   }
 
-   text-align: center;
+   .goodsPrice {
+      @include text-edit('SF Pro Display', 700, 1.875rem, 1.2);
+      text-align: center;
+   }
 
-   @include text-edit('SF Pro Display', 400, 1.125rem, 1.17);
+   .saleIcon {
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
 
-   text-align: center;
-}
+   .getFavorite {
+      display: inline-block;
 
-.goodsPrice {
-   @include text-edit('SF Pro Display', 700, 1.875rem, 1.2);
-   text-align: center;
-}
+      position: absolute;
+      top: 0;
+      right: 0;
 
-.saleIcon {
-   position: absolute;
-   top: 0;
-   left: 0;
-}
+   }
 
-.getFavorite {
-   display: inline-block;
+   .bottomBtn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+   }
 
-   position: absolute;
-   top: 0;
-   right: 0;
+   .favoriteInput {
+      width: 1px;
+      height: 1px;
+      visibility: hidden;
+   }
 
-}
+   .showProduct {
+      width: 230px;
+      height: 61px;
 
-.bottomBtn {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-}
+      position: absolute;
+      top: 105px;
+      left: 50%;
+      transform: translateX(-50%);
 
-.favoriteInput {
-   width: 1px;
-   height: 1px;
-   visibility: hidden;
+      @include text-edit('SF Pro Display', 400, 1.25rem, 1.2);
+
+      font-style: normal;
+      text-align: center;
+
+      background-color: $whiteColor;
+      opacity: 0;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+
+      transition: all 0.3s ease;
+   }
 }

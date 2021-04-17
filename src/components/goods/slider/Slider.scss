@@ -1,4 +1,6 @@
 @import './../../../abstracts/variables.scss ';
+@import './../../../abstracts/mixins.scss ';
+
 
 .productSlider {
 
@@ -12,11 +14,19 @@
       .swiper-slide {
          width: 271px;
          height: 403px;
-
          display: flex;
          flex-direction: column;
          align-items: center;
-         justify-content: space-between;
+         justify-content: center;
+         transition: all 0.3s ease;
+
+         &:hover {
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            border-radius: 3px;
+            transform: scale(1.01);
+         }
+
+
 
          .goodsDiscr {
             text-align: center;

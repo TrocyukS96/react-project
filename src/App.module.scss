@@ -1,3 +1,6 @@
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+
 @font-face {
   font-family: 'SF Pro Display';
   src: url(./assets/fonts/SFProDisplay-Regular.woff);
@@ -21,10 +24,9 @@ button {
 .mainApp {
   min-height: 100vh;
 
-  font-family: 'SF Pro Display';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+  @include text-edit ('SF Pro Display', 400, 1rem, 1);
+
+  background-color: $whiteColor;
 }
 
 .container {

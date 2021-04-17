@@ -20,6 +20,7 @@ function GoodsCard(props) {
          {/*<span >нет в наличии</span>*/}
          {/*<a href="#">Сообщить о поступлении</a>*/}
          <button className={s.bottomBtn}><img src={cartImg} alt="cart" /></button>
+         <button className={s.showProduct}>посмотреть товар</button>
       </div>
    )
 }
