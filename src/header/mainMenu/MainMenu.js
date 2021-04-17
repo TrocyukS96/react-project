@@ -36,4 +36,4 @@ function MainMenu() {
    );
 }
 
-export default MainMenu
+export default MainMenu;

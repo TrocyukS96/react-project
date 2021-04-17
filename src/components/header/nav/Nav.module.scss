@@ -1,10 +1,11 @@
+@import './../../../abstracts/mixins.scss';
+
+
 .navigation {
    padding-top: 50px;
 
+   @include flex-edit(space-between, center);
 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
 
    position: relative;
 }
@@ -32,17 +33,17 @@
    position: relative;
 }
 
-//.adress::before {
-//   content: "";
-//   width: 26px;
-//   height: 30px;
-//
-//   background: url(/src/assets/image/icons/location.png) no-repeat;
-//
-//   position: absolute;
-//   top: -9px;
-//   left: -26px;
-//}
+.adress::before {
+   content: "";
+   width: 28px;
+   height: 30px;
+
+   background: url('./../../assets/image/icons/location.svg') no-repeat;
+
+   position: absolute;
+   top: -9px;
+   left: -30px;
+}
 
 .headerIcons {
    display: flex;
@@ -57,20 +58,4 @@
 
 .headerIcon:last-child {
    padding-right: 0;
-}
-
-.navigationLeft {
-
-}
-
-.navigationLeftLink {
-
-}
-
-.adressLink {
-
-}
-
-.headerIconImg {
-
 }

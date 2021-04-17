@@ -1,3 +1,4 @@
+@import './../../abstracts/mixins.scss';
 @import './../../abstracts/variables.scss';
 
 @font-face {
@@ -18,24 +19,15 @@
 .list {
    padding: 15px 0;
 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   @include flex-edit (space-between, center);
 
    text-align: center;
 }
 
-.menuItem {}
-
 .menuLink {
+   @include text-edit ('SF Pro Display', 400, 1.25rem, 1.2);
 
-   font-family: 'SF Pro Display';
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 24px;
    letter-spacing: 0em;
-
+   font-style: normal;
    text-align: left;
-
-}
+} 

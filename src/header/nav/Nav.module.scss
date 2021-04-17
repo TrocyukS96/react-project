@@ -1,4 +1,5 @@
 @import './../../abstracts/variables.scss';
+@import './../../abstracts/mixins.scss';
 
 @font-face {
    font-family: 'SF Pro Display';
@@ -24,24 +25,19 @@ a {
 .navigation {
    padding-top: 50px;
 
-   font-family: 'SF Pro Display';
-   font-weight: 700;
-   font-style: normal;
-   font-size: 20px;
-   line-height: 24px;
-   letter-spacing: 0em;
-   text-align: center;
 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   @include text-edit ('SF Pro Display', 700, 1.25rem, 1.2);
+   @include flex-edit (space-between, center);
+
+   letter-spacing: 0em;
+
+   text-align: center;
 
    position: relative;
 }
 
 .list {
-   display: flex;
-   align-items: center;
+   @include flex-edit (space-between, center);
 }
 
 .listItem {
@@ -54,9 +50,7 @@ a {
 
 .navigationRight {
 
-
-   display: flex;
-   align-items: center;
+   @include flex-edit (normal, center);
 
 }
 
@@ -80,9 +74,7 @@ a {
 .icons {
    padding-right: 15px;
 
-   display: flex;
-   align-items: center;
-
+   @include flex-edit(normal, center);
 
 }
 
@@ -109,19 +101,13 @@ a {
 
    position: absolute;
    bottom: 0;
-   right: -15;
+   right: -15px;
 
-   color: #fff;
-   font-family: 'SF Pro Display';
-   font-size: 10px;
-   font-weight: 500;
-   line-height: 20px;
+   @include text-edit ('SF Pro Display', 500, 0.625rem, 2);
+
    letter-spacing: 0em;
    text-align: center;
 
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
+   color: $whiteColor;
 
 }
