@@ -14,13 +14,20 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('./../../../assets/fonts/SFProDisplay-Bold.woff');
+   font-weight: 700;
+   font-style: normal;
+}
+
 
 .goodsHeader {
 
    .goodsTitle {
       padding-bottom: 30px;
 
-      @include text-edit ('Barlow', 700, 1.5625rem, 1.2);
+      @include text-edit ('SF Pro Display'gt, 700, 1.5625rem, 1.2);
    }
 
    .goodsMenu {
@@ -30,8 +37,14 @@
    }
 
    .goodsMenuItem {
-      padding-right: 50px;
+      margin-right: 50px;
+      transition: all 0.3s ease;
 
+      &:hover {
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+         transform: scaleX(1.2);
+
+      }
    }
 
    .goodsMenuItem:last-child {

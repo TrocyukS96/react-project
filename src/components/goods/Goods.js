@@ -13,9 +13,9 @@ function Goods(props) {
       <div className={s.goods}>
          <BlockHeader text="Популярные товары"/>
          <Slider/>
-          {props.button &&
-              <BtnShow text="Показать ещё" />
-          }
+         {props.button &&
+            <BtnShow text="Показать ещё" />
+         }
       </div>
    )
 }

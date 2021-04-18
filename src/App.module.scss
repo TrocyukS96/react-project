@@ -27,6 +27,7 @@ button {
   @include text-edit ('SF Pro Display', 400, 1rem, 1);
 
   background-color: $whiteColor;
+  color: $textColor;
 }
 
 .container {

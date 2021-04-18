@@ -6,7 +6,7 @@ import stockImgItem from "./../../../../assets/image/stock/stock-img-item.svg";
 
 function Stock() {
     return (
-        <div className={s.stock}>
+        <a href="#" className={s.stock}>
             <img className={s.stockImg} src={stock} alt="stock" />
             <div className={s.stockPriceNormalWrapper}>
                 <span className={s.stockPrice}>190 000</span>
@@ -17,9 +17,9 @@ function Stock() {
                 <h2>Лодочный мотор Suzuki DF9.9BRS</h2>
             </div>
             <div className={s.stockTimeAction}>
-                Акция действует до 31.08.2020
+                Акция действует до <br/><span> 31.08.2020</span>
             </div>
-        </div>
+        </a>
     );
 }
 

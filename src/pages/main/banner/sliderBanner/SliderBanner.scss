@@ -1,7 +1,7 @@
 .sliderBanner {
 
    .swiper {
-      width: 920px;
+      width: 904px;
 
       & .swiper-pagination {
          bottom: 20px;
@@ -29,7 +29,7 @@
 
    .swiper-button-next,
    .swiper-container-rtl .swiper-button-prev {
-      right: 60px;
+      right: 50px;
       left: auto;
    }
 }

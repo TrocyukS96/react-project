@@ -24,10 +24,20 @@
    text-align: center;
 }
 
+.menuItem {
+   transition: all 0.3s ease;
+
+   &:hover {
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      transform: scaleX(1.1);
+
+   }
+}
+
 .menuLink {
    @include text-edit ('SF Pro Display', 400, 1.25rem, 1.2);
 
    letter-spacing: 0em;
    font-style: normal;
    text-align: left;
-} 
+}

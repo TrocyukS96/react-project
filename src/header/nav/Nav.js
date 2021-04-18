@@ -4,7 +4,7 @@ import person from "./../../assets/image/icons/person.svg";
 import buy from "./../../assets/image/icons/buy.svg";
 import Logo from '../logo/Logo';
 
-function Nav () {
+function Nav() {
    return (
       <nav className={s.navigation}>
          <div className={s.navigationLeft}>
@@ -26,13 +26,13 @@ function Nav () {
             </div>
             <ul className={s.icons}>
                <li className={s.icon}>
-                  <img className={s.iconImg} src={heart} alt="heart-icon" />
+                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={heart} alt="heart-icon" /></a>
                </li>
                <li className={s.icon}>
-                  <img className={s.iconImg} src={person} alt="person-icon" />
+                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={person} alt="person-icon" /></a>
                </li>
                <li className={s.icon}>
-                  <img className={s.iconImg} src={buy} alt="buy-icon" />
+                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={buy} alt="buy-icon" /></a>
                </li>
             </ul>
          </div>

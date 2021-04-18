@@ -41,7 +41,14 @@ a {
 }
 
 .listItem {
-   padding-right: 50px;
+   margin-right: 50px;
+   transition: all 0.3s ease;
+
+   &:hover {
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      transform: scaleX(1.2);
+
+   }
 }
 
 .listItem:last-child {
@@ -55,8 +62,15 @@ a {
 }
 
 .adress {
-   padding-right: 80px;
+   margin-right: 80px;
    position: relative;
+   transition: all 0.3s ease;
+
+   &:hover {
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      transform: scaleX(1.1);
+
+   }
 }
 
 .adress::before {
@@ -79,7 +93,8 @@ a {
 }
 
 .icon {
-   padding-right: 10px;
+   margin-right: 10px;
+
 }
 
 .icon:last-child {

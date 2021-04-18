@@ -1,3 +1,63 @@
+@import './../../../abstracts/variables.scss';
+@import './../../../abstracts/mixins.scss';
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./../../../assets/fonts/SFProDisplay-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./../../../assets/fonts/SFProDisplay-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
 .cardDetails {
-    border: 1px solid #CDCDCD
+    border: 1px solid #CDCDCD;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 37px 14px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        transform: scaleX(1.1);
+
+    }
+
+    & h3 {
+        @include text-edit('SF Pro Display', 700, 1.4rem, 1.2);
+
+    }
+
+    & .cardDetailsLink {
+        position: absolute;
+        bottom: 14px;
+        left: 20px;
+
+
+
+    }
+}
+
+.cardDetailsLink a {
+    position: relative;
+
+    @include text-edit('SF Pro Display', 400, 0.875rem, 1.2);
+    color: $lightGrey;
+
+    &::after {
+        content: "";
+        width: 6px;
+        height: 9px;
+        background: url('./../../../assets/image/cardDetails/arrow-back.svg') no-repeat;
+        position: absolute;
+        top: 5px;
+        right: -10px;
+    }
 }
