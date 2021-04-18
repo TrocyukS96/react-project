@@ -11,14 +11,16 @@ function CardCatalog(props) {
     return (
         <div className={s.cardCatalog}>
             <img src={saleImg} alt="sale" />
-            <button><img src={favoritesImg} alt="favorites " /></button>
-            <img src={cardCatalogImg} alt="item" />
-            <h3>{props.text}</h3>
-            <span>{props.text2}</span>
-            {/*<span >нет в наличии</span>*/}
-            {/*<a href="#">Сообщить о поступлении</a>*/}
-            <button><img src={cartImg} alt="cart" /></button>
-            {/*<img src={viewProductImg} alt="view" />*/}
+            <button className={s.buttonFavorit}><img src={favoritesImg} alt="favorites " /></button>
+            <div className={s.cardCatalogInner}>
+                <img src={cardCatalogImg} alt="item" />
+                <h3 className={s.titleCardCatalog}>{props.text}</h3>
+                <span className={s.costCardCatalog}>{props.text2}</span>
+                {/*<span >нет в наличии</span>*/}
+                {/*<a href="#">Сообщить о поступлении</a>*/}
+                <button className={s.buttonCart}><img src={cartImg} alt="cart" /></button>
+                {/*<img src={viewProductImg} alt="view" />*/}
+            </div>
         </div>
 
     )
