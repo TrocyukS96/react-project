@@ -5,9 +5,15 @@
    max-width: 300px;
    margin-right: 10px;
 }
+
+.component{
+   margin-top: 40px;
+}
 .FilterTitle{
   display: flex; 
 }
+.filterList{
+   display: flex;}
 .titleLink{
    text-transform: uppercase;
    margin-right: 40px;
@@ -26,12 +32,18 @@
 .checkboxWrap{
    display: flex;
    flex-wrap: wrap;
+   // max-width: 230px;
+   justify-content: space-between;
+   margin-top: 20px;
 }
 
 .filterPowerItem{
    display: flex;
    justify-content: space-between;
    border-bottom: 1px solid #C4C4C4;
+}
+.powerItemTitle{
+   margin: 20px 0 10px 0;
 }
 
 .blokFilterBottom{

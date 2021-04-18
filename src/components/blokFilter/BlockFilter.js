@@ -14,12 +14,14 @@ function BlockFilter() {
         <div className={s.blokFilter}>
 
             <div className={s.FilterTitle}>
-                <a className={s.titleLink} href="#">Параметры </a>
-                <a className={s.titleLink} href="#"> По марке </a>
+                <ul className={s.filterList}>
+                    <li><a className={s.titleLink} href="#">Параметры </a></li>
+                    <li><a className={s.titleLink} href="#"> По марке </a></li>
+                </ul>         
 
             </div>
             
-            <div className={s.availability}>
+            <div className={s.availability, s.component}>
 
                 <FilterTitle text="Наличие"/>
 
@@ -31,7 +33,7 @@ function BlockFilter() {
                 </div>   
             </div>
 
-            <div className={s.filterNews}>
+            <div className={s.filterNews, s.component}>
 
                 <FilterTitle text="Новинки"/>
 
@@ -46,51 +48,51 @@ function BlockFilter() {
                 </div> 
             </div> 
 
-            <div className={s.filterPrise}>
+            <div className={s.filterPrise, s.component}>
                 <FilterTitle text="Цена"/>
                 <input type="range"/>
             </div>
 
-            <div className={s.filterPower}>
+            <div className={s.filterPower, s.component}>
 
                 <div className={s.filterPowerItem}>
-                    <FilterTitle text="Мощность"/>
+                    <h4 className={s.powerItemTitle}>Мощность</h4>
                     <FilterSelect power="90" power2="130" power3="154" power4="230" power5="300" />
                 </div>
 
                 <div className={s.filterPowerItem}>
-                    <FilterTitle text="Мощность двигателя, л.с."/>
+                    <h4 className={s.powerItemTitle}>Мощность двигателя, л.с.</h4>
                     <FilterSelect power="90" power2="130" power3="154" power4="230" power5="300" />
                 </div>
                     
                 <div className={s.filterPowerItem}>
-                    <FilterTitle text="Макс. скорость"/>
+                     <h4 className={s.powerItemTitle}>Макс. скорость</h4>
                     <FilterSelect speed="20" speed2="40" speed3="80" />
                 </div>
             </div>        
             
-            <div className={s.filterBrand}>
+            <div className={s.filterBrand, s.component}>
 
                 <FilterTitle text="Бренд"/>
 
                 <div className={s.checkboxWrap}>
 
-                    <FilterCheckbox text="BRP"/>
+                    <FilterCheckbox text="BRP" style={{marginRight: "90px"}}/>
                     <FilterCheckbox text="Spark 2"/>
-                    <FilterCheckbox text="Spark 3"/>
+                    <FilterCheckbox text="Spark 3" style={{marginTop: "20px"}}/>
 
                 </div>
 
-                <FilterLink/>   
+                <FilterLink style={{marginTop: "20px"}}/>   
 
             </div>
             
 
-            <div className={s.filterModel}>
+            <div className={s.filterModel, s.component}>
                 <FilterTitle text="Модель"/>
                 <Input type="text" placeholder="Введите модель"
                 
-                style={{border: "1px solid #E0E0E0", width: "100%"}}/>
+                style={{border: "1px solid #E0E0E0", width: "100%", marginTop: "20px", height: "30px"}}/>
 
                 <div className={s.checkboxWrap}>
 
@@ -107,7 +109,7 @@ function BlockFilter() {
 
             </div>
         
-            <div className={s.filterDicounts}>
+            <div className={s.filterDicounts, s.component}>
             <FilterTitle text="Акции"/>
                 <Btn text="Sale" 
                      style={{background: "#1C62CD", padding: "5px 10px", margin: "0 10px 0 0" }} />
@@ -122,7 +124,7 @@ function BlockFilter() {
                      style={{background: "#000", color: "#fff", padding: "5px 10px"}} />
             </div>
 
-            <div className={s.country}>
+            <div className={s.country, s.component}>
 
              <FilterTitle text="Страны"/>
 
@@ -142,7 +144,7 @@ function BlockFilter() {
 
             </div>
 
-            <div className={s.blokFilterBottom}>
+            <div className={s.blokFilterBottom, s.component}>
                 <Btn text="ВЫБРАТЬ" 
                  style={{background: "#F0F0F4", padding: "15px 85px", width: "100%"}} />
 

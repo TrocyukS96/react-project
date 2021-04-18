@@ -1,1 +1,7 @@
+@import "./../../../../abstracts/variables.scss";
 a{display: block;}
+
+.FilterLink{
+    color: $accentColor;
+    text-decoration: underline;
+}
