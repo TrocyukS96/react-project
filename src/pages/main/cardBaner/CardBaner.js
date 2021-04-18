@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./CardBaner.module.scss";
-import carOne from "../../../../assets/image/Baner/carOne.svg";
-import carTwo from "../../../../assets/image/Baner/carTwo.svg";
-import Btn from "../../../btn/Btn";
+import carOne from "../../../assets/image/Baner/carOne.svg";
+import carTwo from "../../../assets/image/Baner/carTwo.svg";
+import Btn from "./../../../components/btn/Btn";
 
 function CardBaner() {
     return (

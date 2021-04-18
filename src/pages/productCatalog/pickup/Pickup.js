@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Pickup.module.scss';
-import pickupSearchImg from "../../../../assets/image/pickup/pickupSearchImg.svg"
-import pickupBuyImg from "../../../../assets/image/pickup/pickupBuyImg.svg"
+import pickupSearchImg from "./../../../assets/image/pickup/pickupSearchImg.svg"
+import pickupBuyImg from "./../../../assets/image/pickup/pickupBuyImg.svg"
 
 
 function Pickup() {

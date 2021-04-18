@@ -1,10 +1,11 @@
 import s from './App.module.scss';
 
 import Header from './header/Header';
-import Footer from './components/footer/Footer';
-import Main from "./components/pages/main/Main";
-import Catalog from "./components/pages/catalog/Catalog";
-import ProductCard from "./components/pages/productCatalog/ProductCard";
+
+import Main from "./pages/main/Main";
+import Catalog from "./pages/catalog/Catalog";
+import ProductCard from "./pages/productCatalog/ProductCard";
+import Footer from './footer/Footer';
 
 
 function App() {
@@ -17,9 +18,9 @@ function App() {
                 <ProductCard />
                 
             </div>
-            <Footer />
+<Footer/>
         </div>
     );
 }
 
-export default App
+export default App;

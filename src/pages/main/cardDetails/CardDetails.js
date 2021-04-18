@@ -1,6 +1,6 @@
 import React from "react";
 import s from './CardDetails.module.scss';
-import cardDetailsImg from '../../../../assets/image/cardDetails/cardDetails-img.svg';
+import cardDetailsImg from './../../../assets/image/cardDetails/cardDetails-img.svg';
 
 function CardDetails(props) {
     return (

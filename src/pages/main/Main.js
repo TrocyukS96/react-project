@@ -3,9 +3,9 @@ import React from "react";
 import s from './Main.module.scss';
 import CardBaner from "./cardBaner/CardBaner";
 
-import BlockSearch from "../../blockSearch/BlockSearch";
+import BlockSearch from "../../components/blockSearch/BlockSearch";
 import CardDetails from "./cardDetails/CardDetails";
-import Goods from "../../goods/Goods";
+import Goods from "./../../components/goods/Goods";
 import Banner from "./banner/Banner";
 
 

@@ -1,8 +1,8 @@
 import React from "react";
 
 import s from './Catalog.module.scss';
-import BlockInfo from "./../../blockInfo/BlockInfo";
-import BlockFilter from "./../../blokFilter/BlockFilter";
+import BlockInfo from "./../../components/blockInfo/BlockInfo";
+import BlockFilter from "./../../components/blokFilter/BlockFilter";
 import CardCatalog from "./cardCatalog/CardCatalog";
 
 

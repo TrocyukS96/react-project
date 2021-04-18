@@ -4,7 +4,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 import './SliderBanner.scss';
-import sliderImg from "./../../../../../assets/image/slider-banner/slider-banner.png";
+import sliderImg from "./../../../../assets/image/slider-banner/slider-banner.png";
 
 SwiperCore.use([Navigation, Pagination]);
 

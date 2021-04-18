@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Stock.module.scss';
-import stock from "./../../../../../assets/image/stock/stock-img.svg";
-import stockImgItem from "./../../../../../assets/image/stock/stock-img-item.svg";
+import stock from "./../../../../assets/image/stock/stock-img.svg";
+import stockImgItem from "./../../../../assets/image/stock/stock-img-item.svg";
 
 
 function Stock() {

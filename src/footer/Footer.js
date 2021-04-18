@@ -1,13 +1,13 @@
 
 import React from "react";
 
-import Inst from "./../../assets/image/social-icons/instagram.svg";
-import Vk from "./../../assets/image/social-icons/vk .svg";
-import Fb from "./../../assets/image/social-icons/facebook .svg";
-import Yt from "./../../assets/image/social-icons/youtube .svg";
+import Inst from "./../assets/image/social-icons/instagram.svg";
+import Vk from "./../assets/image/social-icons/vk .svg";
+import Fb from "./../assets/image/social-icons/facebook .svg";
+import Yt from "./../assets/image/social-icons/youtube .svg";
 import s from './Footer.module.scss';
-import Btn from "../btn/Btn";
-import Input from "../input/Input";
+import Btn from "./../components/btn/Btn";
+import Input from "../components/input/Input";
 import FooterItem from "./FooterItem";
 
 function Footer() {
