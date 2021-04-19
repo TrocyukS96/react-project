@@ -1,3 +1,13 @@
+@import './../../../abstracts/variables.scss';
+@import './../../../abstracts/mixins.scss';
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
 .tabs {
     height: 70px;
     width: 1172px;
@@ -10,6 +20,8 @@
 
 .tabsText {
     color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1.25rem, 1.193);
+    opacity: 0.6;
 }
 
 .tabs a {

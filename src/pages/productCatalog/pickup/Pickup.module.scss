@@ -1,16 +1,45 @@
+@import './../../../abstracts/variables.scss';
+@import './../../../abstracts/mixins.scss';
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .pickupContainer {
     width: 1134px;
     height: 484px;
+}
+
+.pickupSearchRadioContainer {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .pickupSearch {
     width: 313px;
     position: relative;
     display: flex;
+    align-items: center;
+}
+
+.pickupSearchShop {
+    margin-left: 45px;
+    padding-right: 15px;
+    color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1.062rem, 1.193);
+    opacity: 0.7;
 }
 
 .pickupSearch input {
     height: 33px;
+    width: 313px;
     border-radius: 3px;
     padding-left: 15px;
     padding-right: 35px;
@@ -18,22 +47,70 @@
 
 .pickupSearch button {
     position: absolute;
-    top: 3px;
-    right: 33px;
+    top: 6px;
+    right: -120px;
     cursor: pointer;
 }
 
-.pickupCheckboxWrapper {
-    display: flex;
+
+.radioPickup {
+    margin-right: 70px;
 }
 
-.pickupInfoBuy {
+.radioPickupOne, .radioPickupTwo{
+    padding-right: 50px;
+    padding-left: 15px;
+    color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1.062rem, 1.193);
+    opacity: 0.7;
+}
+
+.radioPickup:last-child {
+    padding-left: 0;
+}
+
+.radioPickup input[type=radio] {
+    padding: 0.4em;
+    -webkit-appearance: none;
+    outline: 1px solid #1C62CD;
+    outline-offset: 0.1em;
+}
+
+.radioPickup input[type=radio]:checked {
+    display: inline-block;
+    background-color: #1C62CD;
+}
+
+.pickupInfoBuyInner {
+    margin-left: 45px;
+}
+
+.pickupInfoBuyGrid {
     display: grid;
     grid-auto-rows: 100px;
-    grid-template-columns: 300px 320px 200px 150px 200px;
+    grid-template-columns: 300px 240px 210px 240px auto;
 }
 
 .pickupSubGrid {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 0.3fr 0.5fr;
+    grid-auto-rows: 30px;
+}
+
+.pickupInfoBuyTitlle {
+    color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1.25rem, 1.193);
+}
+
+.pickupInfoBuyShopAddress {
+    width: 219px;
+    color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1rem, 1.5);
+    opacity: 0.7;
+}
+
+.pickupInfoBuyText {
+    color: #2F3035;
+    @include text-edit('SF Pro Display', 400, 1rem, 1);
+    opacity: 0.7;
 }

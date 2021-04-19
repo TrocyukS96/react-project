@@ -7,67 +7,79 @@ import pickupBuyImg from "./../../../assets/image/pickup/pickupBuyImg.svg"
 function Pickup() {
     return (
         <div className={s.pickupContainer}>
-            <div className={s.pickupSearch}>
-                Магазин
-                <form>
-                    <input type="text" placeholder="" />
-                    <button type="submit"><img src={pickupSearchImg} alt="search" /></button>
-                </form>
-            </div>
-            <div className={s.pickupRadioWrapper}>
-                <div className={s.radio}>
-                    <input  name="choosePickup" type="radio" />Забрать сегодня
-                    <input  name="choosePickup" type="radio" />Заберу в течении недели
+            <div className={s.pickupSearchRadioContainer}>
+                <div className={s.pickupSearch}>
+                    <span className={s.pickupSearchShop}>Магазин</span>
+                    <form>
+                        <input type="text" placeholder="" />
+                        <button type="submit"><img src={pickupSearchImg} alt="search" /></button>
+                    </form>
+                </div>
+                <div className={s.radioPickup}>
+                    <input name="choosePickup" type="radio" />
+                    <label className={s.radioPickupOne}>Забрать сегодня</label>
+                    <input name="choosePickup" type="radio" />
+                    <label className={s.radioPickupTwo}>Заберу в течении недели</label>
                 </div>
             </div>
-            <div className={s.pickupInfoBuy}>
-                <div>Адрес</div>
-                <div>Режим работы</div>
-                <div>Доступно</div>
-                <div>Количество</div>
-                <div>#</div>
-                <div>Москва, ул. Науки 25</div>
-                <div className={s.pickupSubGrid}>
-                    <div>пн-сб:</div>
-                    <div>08:00-19:00</div>
-                    <div>вс:</div>
-                    <div>09:00-17:00</div>
+            <div className={s.pickupInfoBuyInner}>
+                <div className={s.pickupInfoBuyGrid}>
+                    <div className={s.pickupInfoBuyTitlle}>Адрес</div>
+                    <div className={s.pickupInfoBuyTitlle}>Режим работы</div>
+                    <div className={s.pickupInfoBuyTitlle}>Доступно</div>
+                    <div className={s.pickupInfoBuyTitlle}>Количество</div>
+                    <div className={s.pickupInfoBuyTitlle}></div>
+                    <div className={s.pickupInfoBuyShopAddress}>Москва, ул. Науки 25</div>
+                    <div className={s.pickupSubGrid}>
+                        <div className={s.pickupInfoBuyText}>пн-сб:</div>
+                        <div className={s.pickupInfoBuyText}>08:00-19:00</div>
+                        <div className={s.pickupInfoBuyText}>вс:</div>
+                        <div className={s.pickupInfoBuyText}>09:00-17:00</div>
+                    </div>
+                    <div className={s.pickupInfoBuyText}>В наличии</div>
+                    <div className={s.pickupInfoBuyText}>1</div>
+                    <div>
+                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                    </div>
+                    <div className={s.pickupInfoBuyShopAddress}>Москва, ул. Южная 134</div>
+                    <div className={s.pickupSubGrid}>
+                        <div className={s.pickupInfoBuyText}>пн-сб:</div>
+                        <div className={s.pickupInfoBuyText}>08:00-19:00</div>
+                        <div className={s.pickupInfoBuyText}>вс:</div>
+                        <div className={s.pickupInfoBuyText}>09:00-17:00</div>
+                    </div>
+                    <div className={s.pickupInfoBuyText}>В наличии</div>
+                    <div className={s.pickupInfoBuyText}>1</div>
+                    <div>
+                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                    </div>
+                    <div className={s.pickupInfoBuyShopAddress}>Санкт-Петербург,
+                        ул. Красная 19
+                    </div>
+                    <div className={s.pickupSubGrid}>
+                        <div className={s.pickupInfoBuyText}>пн-сб:</div>
+                        <div className={s.pickupInfoBuyText}>08:00-19:00</div>
+                        <div className={s.pickupInfoBuyText}>вс:</div>
+                        <div className={s.pickupInfoBuyText}>09:00-17:00</div>
+                    </div>
+                    <div className={s.pickupInfoBuyText}>Нет в наличии</div>
+                    <div className={s.pickupInfoBuyText}>0</div>
+                    <div>
+                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                    </div>
+                    <div className={s.pickupInfoBuyShopAddress}>Киев, ул Шевченко 167</div>
+                    <div className={s.pickupSubGrid}>
+                        <div className={s.pickupInfoBuyText}>пн-сб:</div>
+                        <div className={s.pickupInfoBuyText}>08:00-19:00</div>
+                        <div className={s.pickupInfoBuyText}>вс:</div>
+                        <div className={s.pickupInfoBuyText}>09:00-17:00</div>
+                    </div>
+                    <div className={s.pickupInfoBuyText}>Нет в наличии</div>
+                    <div className={s.pickupInfoBuyText}>0</div>
+                    <div>
+                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                    </div>
                 </div>
-                <div>В наличии</div>
-                <div>1</div>
-                <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
-                <div>Москва, ул. Южная 134</div>
-                <div className={s.pickupSubGrid}>
-                    <div>пн-сб:</div>
-                    <div>08:00-19:00</div>
-                    <div>вс:</div>
-                    <div>09:00-17:00</div>
-                </div>
-                <div>В наличии</div>
-                <div>1</div>
-                <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
-                <div>Санкт-Петербург,
-                    ул. Красная 19
-                </div>
-                <div className={s.pickupSubGrid}>
-                    <div>пн-сб:</div>
-                    <div>08:00-19:00</div>
-                    <div>вс:</div>
-                    <div>09:00-17:00</div>
-                </div>
-                <div>Нет в наличии</div>
-                <div>0</div>
-                <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
-                <div>Киев, ул Шевченко 167</div>
-                <div className={s.pickupSubGrid}>
-                    <div>пн-сб:</div>
-                    <div>08:00-19:00</div>
-                    <div>вс:</div>
-                    <div>09:00-17:00</div>
-                </div>
-                <div>Нет в наличии</div>
-                <div>0</div>
-                <div><button><img src={pickupBuyImg} alt="buy" /></button></div>
             </div>
         </div>
     );
