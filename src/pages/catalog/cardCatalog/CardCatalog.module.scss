@@ -2,50 +2,75 @@
 @import './../../../abstracts/mixins.scss';
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'SF Pro Display';
+  src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Barlow';
-    src: url(./../../../assets/fonts/Barlow-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Barlow';
+  src: url(./../../../assets/fonts/Barlow-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
 }
 
 .cardCatalog {
-    height: 397px;
-    width: 265px;
-    border: 1px solid blue;
-    position: relative;
+  height: 397px;
+  width: 265px;
+  border: 1px solid blue;
+  position: relative;
+
 }
 
 .buttonFavorit {
-    position: absolute;
-    right: 20px;
-    top: 15px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
 
 .buttonCart {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
 }
 
 .titleCardCatalog {
-    @include text-edit('SF Pro Display', 400, 1.125rem, 1.193);
-    text-align: center;
-    padding-top: 25px;
+  @include text-edit('SF Pro Display', 400, 1.125rem, 1.193);
+  text-align: center;
+  padding-top: 25px;
 }
 
 .costCardCatalog {
-    @include text-edit('Barlow', 700, 1.875rem, 1.2);
-    text-align: center;
-    padding-top: 20px;
+  @include text-edit('Barlow', 700, 1.875rem, 1.2);
+  text-align: center;
+  padding-top: 20px;
 }
 
 .cardCatalogInner {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.showProduct {
+    width: 230px;
+    height: 61px;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include text-edit('SF Pro Display', 400, 1.25rem, 1.2);
+
+    font-style: normal;
+    text-align: center;
+    background-color: $whiteColor;
+    opacity: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.showProduct:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }

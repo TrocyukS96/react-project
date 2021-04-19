@@ -27,8 +27,8 @@
    }
 
    .goodsImg {
-      margin-top: 52px;
-      margin-bottom: 14px;
+      //margin-top: 52px;
+      //margin-bottom: 14px;
       display: block;
       margin: 0 auto;
    }
@@ -91,7 +91,7 @@
 
       background-color: $whiteColor;
       opacity: 0;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
 
       transition: all 0.3s ease;
