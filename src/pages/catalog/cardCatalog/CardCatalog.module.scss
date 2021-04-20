@@ -44,6 +44,11 @@
   position: absolute;
   right: 20px;
   top: 15px;
+
+  & img {
+    display: block;
+    background-color: #fff;
+  }
 }
 
 .buttonCart {
