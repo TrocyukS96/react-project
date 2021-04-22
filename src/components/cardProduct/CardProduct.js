@@ -9,6 +9,9 @@ import DescString from "./DescString";
 import FilterLink from "./../blokFilter/blockFilterComponents/filterLink/FilterLink";
 import Btn from "../btn/Btn";
 
+import Rating from '@material-ui/lab/Rating';
+import { makeStyles } from '@material-ui/core/styles';
+
 
 
 function CardProduct() {
@@ -31,7 +34,7 @@ function CardProduct() {
 
         </div>
 
-
+    
       </div>
 
       <div className={s.cardProductRightWrap}>
@@ -48,14 +51,10 @@ function CardProduct() {
 
             <img src={Health} alt="#"/>
 
-            <div className={s.cardProductInfoImg}>
-              <img src={ Star} alt="#"/>
-              <img src={ Star} alt="#"/>
-              <img src={ Star} alt="#"/>
-              <img src={ Star} alt="#"/>
-              <img src={ Star} alt="#"/>
-            </div>
-
+           <div className={s.rating}>
+              <Rating name="size-medium" defaultValue={2} />
+           </div>
+            
 
           </div>
 

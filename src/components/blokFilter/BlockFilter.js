@@ -110,18 +110,22 @@ function BlockFilter() {
             </div>
         
             <div className={s.filterDicounts, s.component}>
-            <FilterTitle text="Акции"/>
-                <Btn text="Sale" 
-                     style={{background: "#1C62CD", padding: "5px 10px", margin: "0 10px 0 0" }} />
+                <FilterTitle text="Акции"/>
+                
+                <div className={s.btnWrap}>
+                    <Btn text="Sale" 
+                        style={{background: "#1C62CD", padding: "5px 10px", margin: "0 10px 0 0" }} />
 
-                <Btn text="New" 
-                     style={{background: "#F0F0F4", padding: "5px 10px", margin: "0 10px 0 0"}} />
+                    <Btn text="New" 
+                        style={{background: "#F0F0F4", padding: "5px 10px", margin: "0 10px 0 0"}} />
 
-                <Btn text="Hit" 
-                     style={{background: "#F0F0F4", padding: "5px 10px", margin: "0 10px 0 0"}} />
+                    <Btn text="Hit" 
+                        style={{background: "#F0F0F4", padding: "5px 10px", margin: "0 10px 0 0"}} />
 
-                <Btn text="Дилер" 
-                     style={{background: "#000", color: "#fff", padding: "5px 10px"}} />
+                    <Btn text="Дилер" 
+                        style={{background: "#000", color: "#fff", padding: "5px 10px"}} />
+                </div>
+
             </div>
 
             <div className={s.country, s.component}>
