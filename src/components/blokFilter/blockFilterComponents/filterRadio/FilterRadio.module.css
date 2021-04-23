@@ -1,0 +1,25 @@
+.radioWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.radio {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #C4C4C4;
+  margin-right: 7px;
+}
+
+input[type="radio"]:checked + label.radio {
+  border: 1px solid #C4C4C4;
+  background-color: blue;
+}
+/*# sourceMappingURL=FilterRadio.module.css.map */

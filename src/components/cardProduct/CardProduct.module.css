@@ -1,0 +1,136 @@
+span {
+  display: block;
+}
+
+.cardProductContener {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 45px 0 85px 0;
+}
+
+.cardProductLeftWrap {
+  width: 100%;
+}
+
+.cardProduct {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.SpanTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1C62CD;
+  padding: 15px 25px;
+  color: #fff;
+}
+
+.cardProductImg {
+  margin-top: 65px;
+}
+
+.SpanDiscount {
+  position: relative;
+  font-size: 30px;
+  color: #2F3035;
+  margin-top: 20px;
+}
+
+.SpanDiscount::before {
+  content: "";
+  border-bottom: 2px solid #2F3035;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.SpanPrice {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cardProductSpan {
+  margin-top: 20px;
+  color: #1C62CD;
+  font-size: 15px;
+}
+
+.cardProductRightWrap {
+  width: 100%;
+}
+
+.cardProductInfoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ProductName {
+  font-size: 30px;
+}
+
+.Subtitle {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.InfoImg {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgVector {
+  margin-right: 30px;
+}
+
+.imgHealth {
+  margin-right: 30px;
+}
+
+.ProductDescription {
+  margin-top: 50px;
+}
+
+.InfoLinkWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.InfoLink {
+  margin-right: 35px;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-bottom: 2px solid #fff;
+}
+
+.InfoLink:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.InfoLink:hover {
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+  border-bottom: 2px solid #1C62CD;
+}
+/*# sourceMappingURL=CardProduct.module.css.map */

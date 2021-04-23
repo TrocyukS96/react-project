@@ -20,10 +20,11 @@
    font-size: 16px;
    color:$lightGrey;
    transition: .2s;
+   border-bottom: 2px solid #fff;
    &:hover{
       color:$textColor;
       border-bottom: 2px solid $accentColor;
-      font-weight: 700;
+      text-shadow: 0 0 1px #333, 0 0 1px #333;
    }
 }
 .availability{

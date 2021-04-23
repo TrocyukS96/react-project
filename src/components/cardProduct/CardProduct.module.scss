@@ -78,8 +78,14 @@ span{
 .InfoImg{
     margin-top: 20px;
     display: flex;
+    align-items: center;
 }
-
+.imgVector{
+    margin-right: 30px;
+}
+.imgHealth{
+    margin-right: 30px;
+}
 
 .ProductDescription{
     margin-top: 50px;
@@ -92,11 +98,12 @@ span{
     margin-right: 35px;
     font-size: 20px;
     transition: .3s;
+    border-bottom: 2px solid #fff;
     &:nth-last-child(1){
         margin-right: 0;
     }
     &:hover{
-        font-weight: 700;
+        text-shadow: 0 0 1px #333, 0 0 1px #333;
         border-bottom: 2px solid $accentColor;
     }
 }

@@ -1,0 +1,23 @@
+.btnSearch {
+  border: none;
+  margin-right: 30px;
+  padding: 10px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.btnSearch:hover {
+  background-color: #F0F0F4;
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+}
+
+.btnSearch:last-child {
+  margin: 0;
+}
+/*# sourceMappingURL=BtnSearch.module.css.map */

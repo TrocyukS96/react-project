@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,IAAI;EAClB,OAAO,EAAE,SAAS;EAClB,gBAAgB,EAAE,IAAI;EACtB,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,GAAG;EACf,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAEhB,UAAU,EAAE,YAAY;CAUzB;;AApBD,AAYE,UAZQ,AAYP,MAAM,CAAC;EACN,gBAAgB,ECXT,OAAO;EDYd,WAAW,EAAE,0BAA0B;CACxC;;AAfH,AAiBE,UAjBQ,AAiBP,WAAW,CAAC;EACX,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "BtnSearch.module.scss",
+        "../../abstracts/variables.scss"
+    ],
+    "names": [],
+    "file": "BtnSearch.module.css"
+}

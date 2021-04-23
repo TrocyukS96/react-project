@@ -5,6 +5,7 @@ import Input from "./../input/Input";
 import s from './BlockFilter.module.scss';
 import FilterCheckbox from "./blockFilterComponents/filterCheckbox/FilterCheckbox";
 import FilterLink from "./blockFilterComponents/filterLink/FilterLink";
+import FilterRadio from "./blockFilterComponents/filterRadio/FilterRadio";
 import FilterSelect from "./blockFilterComponents/filterSelect/FilterSelect";
 import FilterTitle from "./blockFilterComponents/filterTitle/FilterTitle";
 
@@ -39,11 +40,9 @@ function BlockFilter() {
 
                 <div className={s.checkboxWrap}>
 
-                    <FilterCheckbox text="Все"/>
-
-                    <FilterCheckbox text="Новинки"/>
-
-                    <FilterCheckbox text="Акции"/>
+                    <FilterRadio text="Все"/>
+                    <FilterRadio text="Новинки"/>
+                    <FilterRadio text="Акции"/>
 
                 </div> 
             </div> 

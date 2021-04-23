@@ -1,0 +1,22 @@
+.radioWrap{
+   display: flex;
+   align-items: center;
+}
+
+// скрываем radiobutton
+input[type="radio"]{display: none;}
+
+// кастомизируем label
+label.radio{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #C4C4C4;
+    margin-right: 7px;
+}
+label.radio{}
+
+// Для выбранного объекта
+input[type="radio"]:checked+label.radio{
+   border: 1px solid #C4C4C4;
+   background-color: blue;
+}

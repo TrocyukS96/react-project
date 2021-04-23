@@ -1,0 +1,90 @@
+.blokFilter {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.component {
+  margin-top: 40px;
+}
+
+.FilterTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filterList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titleLink {
+  text-transform: uppercase;
+  margin-right: 40px;
+  font-size: 16px;
+  color: #C4C4C4;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-bottom: 2px solid #fff;
+}
+
+.titleLink:hover {
+  color: #2F3035;
+  border-bottom: 2px solid #1C62CD;
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+}
+
+.availability {
+  margin-top: 50px;
+}
+
+.checkboxWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+.checkboxWrap:nth-child(3) {
+  margin-right: 0;
+  height: 50px;
+}
+
+.filterPowerItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.powerItemTitle {
+  margin: 20px 0 10px 0;
+}
+
+.blokFilterBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btnWrap {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=BlockFilter.module.css.map */
