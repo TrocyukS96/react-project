@@ -9,6 +9,7 @@ import CardCatalog from "./cardCatalog/CardCatalog";
 function Catalog() {
     return (
         <div>
+
             <BlockInfo />
             
             <div className={s.CatalogContainer}>

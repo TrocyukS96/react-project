@@ -4,6 +4,7 @@ import cardCatalogImg from "./../../../assets/image/cardCatalog/cardCatalogImg.s
 import favoritesImg from "./../../../assets/image/cardCatalog/favoritesImg.svg";
 import saleImg from "./../../../assets/image/cardCatalog/saleImg.svg";
 import cartImg from "./../../../assets/image/cardCatalog/cartImg.svg";
+import {NavLink} from "react-router-dom";
 
 
 function CardCatalog(props) {
@@ -18,7 +19,7 @@ function CardCatalog(props) {
                 {/*<span >нет в наличии</span>*/}
                 {/*<a href="#">Сообщить о поступлении</a>*/}
                 <button className={s.buttonCart}><img src={cartImg} alt="cart" /></button>
-                <button className={s.showProduct}>посмотреть товар</button>
+                <button className={s.showProduct}><NavLink to='/productCard'>посмотреть товар</NavLink></button>
             </div>
         </div>
 

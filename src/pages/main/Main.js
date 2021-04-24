@@ -12,7 +12,7 @@ import BlockSearch from "../../components/blockSearch/BlockSearch";
 import CardDetails from "./cardDetails/CardDetails";
 import Goods from "./../../components/goods/Goods";
 import Banner from "./banner/Banner";
-import { BrowserRouter } from "react-router-dom";
+
 
 
 function Main() {
@@ -24,7 +24,7 @@ function Main() {
     const data2 = {
         title: "Гидроциклы",
         img: img2,
-        link: '/../src/pages/catalog/Catalog.js'
+        link: "./../catalog"
     }
     const data3 = {
         title: "Катера",
@@ -47,26 +47,23 @@ function Main() {
         link: '/6'
     }
     return (
-        <BrowserRouter>
-            <div className={s.main}>
 
-                <Banner />
-
-                <BlockSearch />
-
-                <div className={s.cardDetailsInner}>
-                    <CardDetails title={data1.title} img={data1.img} link={data1.link} />
-                    <CardDetails title={data2.title} img={data2.img} link={data2.link} />
-                    <CardDetails title={data3.title} img={data3.img} link={data3.link} />
-                    <CardDetails title={data4.title} img={data4.img} link={data4.link} />
-                    <CardDetails title={data5.title} img={data5.img} link={data5.link} />
-                    <CardDetails title={data6.title} img={data6.img} link={data6.link} />
-                </div>
-                <Goods />
-                <CardBaner />
-                <Goods button=" " />
+        <div className={s.main}>
+            <Banner />
+            <BlockSearch />
+            <div className={s.cardDetailsInner}>
+                <CardDetails title={data1.title} img={data1.img} link={data1.link} />
+                <CardDetails title={data2.title} img={data2.img} link={data2.link} />
+                <CardDetails title={data3.title} img={data3.img} link={data3.link} />
+                <CardDetails title={data4.title} img={data4.img} link={data4.link} />
+                <CardDetails title={data5.title} img={data5.img} link={data5.link} />
+                <CardDetails title={data6.title} img={data6.img} link={data6.link} />
             </div>
-        </BrowserRouter>
+            <Goods />
+            <CardBaner />
+            <Goods button=" " />
+        </div>
+
     );
 }
 
