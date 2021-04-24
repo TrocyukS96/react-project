@@ -1,4 +1,5 @@
 import s from './App.module.scss';
+import {BrowserRouter, Route} from "react-router-dom";
 
 import Header from './header/Header';
 
@@ -10,16 +11,17 @@ import Footer from './footer/Footer';
 
 function App() {
     return (
-        <div className={s.mainApp}>
-            <div className={s.container}>
-                <Header />
-                <Main />
-                <Catalog />
-                <ProductCard />
-                
+        <BrowserRouter>
+            <div className={s.mainApp}>
+                <div className={s.container}>
+                    <Header />
+                    <Main />
+                    <Route path='/catalog' component={Catalog} />
+                    <Route path='/productCard' component={ProductCard} />
+                </div>
+                <Footer />
             </div>
-<Footer/>
-        </div>
+        </BrowserRouter>
     );
 }
 
