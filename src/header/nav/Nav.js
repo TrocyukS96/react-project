@@ -3,6 +3,7 @@ import heart from "./../../assets/image/icons/heart.svg";
 import person from "./../../assets/image/icons/person.svg";
 import buy from "./../../assets/image/icons/buy.svg";
 import Logo from '../logo/Logo';
+import Burger from '../burger/Burger';
 
 function Nav() {
    return (
@@ -24,19 +25,20 @@ function Nav() {
             <div className={s.adress}>
                <a className={s.adressLink} href="#" >Москва,  ул. Науки  25</a>
             </div>
-            <ul className={s.icons}>
-               <li className={s.icon}>
-                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={heart} alt="heart-icon" /></a>
-               </li>
-               <li className={s.icon}>
-                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={person} alt="person-icon" /></a>
-               </li>
-               <li className={s.icon}>
-                  <a className={s.iconLink} href="#"><img className={s.iconImg} src={buy} alt="buy-icon" /></a>
-               </li>
-            </ul>
          </div>
+         <ul className={s.icons}>
+            <li className={s.icon}>
+               <a className={s.iconLink} href="#"><img className={s.iconImg} src={heart} alt="heart-icon" /></a>
+            </li>
+            <li className={s.icon}>
+               <a className={s.iconLink} href="#"><img className={s.iconImg} src={person} alt="person-icon" /></a>
+            </li>
+            <li className={s.icon}>
+               <a className={s.iconLink} href="#"><img className={s.iconImg} src={buy} alt="buy-icon" /></a>
+            </li>
+         </ul>
          <Logo />
+         <Burger />
       </nav>
    );
 }

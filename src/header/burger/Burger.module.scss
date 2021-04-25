@@ -1,0 +1,46 @@
+@import './../../abstracts/variables.scss';
+
+
+.burger {
+   position: fixed;
+   top: 34px;
+   left: 10px;
+
+   cursor: pointer;
+
+   display: none;
+}
+
+.burgerItem::before,
+.burgerItem::after {
+   content: "";
+   width: 35px;
+   height: 3px;
+
+   background-color: $textColor;
+
+   display: block;
+
+}
+
+.burgerItem::after {
+   margin-top: 10px;
+}
+
+.burgerItem span {
+   margin-top: 10px;
+
+   width: 35px;
+   height: 3px;
+
+   background-color: $textColor;
+
+   display: block;
+}
+
+@media screen and (max-width:1200px) {
+   .burger {
+      display: block;
+   }
+
+}
