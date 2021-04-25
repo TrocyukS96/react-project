@@ -10,7 +10,7 @@ function Catalog() {
     return (
         <div>
 
-            <BlockInfo />
+            <BlockInfo title="Гидроциклы" />
             
             <div className={s.CatalogContainer}>
                 <BlockFilter />
