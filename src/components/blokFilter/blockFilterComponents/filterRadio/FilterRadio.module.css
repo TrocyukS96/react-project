@@ -1,25 +1,37 @@
-.radioWrap {
+.label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-input[type="radio"] {
+.radio {
   display: none;
 }
 
-label.radio {
+.fake {
+  display: inline-block;
   width: 14px;
   height: 14px;
-  border: 1px solid #C4C4C4;
-  margin-right: 7px;
+  border: solid 1px #C4C4C4;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 5px;
 }
 
-input[type="radio"]:checked + label.radio {
-  border: 1px solid #C4C4C4;
-  background-color: blue;
+.fake::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #1C62CD;
+  border-radius: 3px;
+  top: 2%;
+  left: 2%;
+  opacity: 0;
+}
+
+.radio:checked + .fake::before {
+  opacity: 1;
 }
 /*# sourceMappingURL=FilterRadio.module.css.map */

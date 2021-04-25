@@ -7,10 +7,19 @@ function FilterRadio(props) {
     return (
       <div style={props.style} className={s.radioWrap}>
 
-       <label for="radio" className={s.radio}> </label>
-     
-       <input type="radio" name="radio" value={props.value} id="radio" /> <span className={s.span}>{props.text}</span>
+        <label className={s.label}>
           
+          <input type="radio" className={s.radio}  name="1" /> 
+          
+          <span className={s.fake}></span>
+          <span className={s.span}>{props.text}</span>
+           
+           
+           
+         </label>
+     
+       
+     
         
   
       </div>

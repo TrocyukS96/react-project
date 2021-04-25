@@ -9,7 +9,7 @@ import s from'./BlockInfo.module.scss';
 
 
 
-function BlockInfo() {
+function BlockInfo(props) {
     return (
         <div className={s.blokInfo}>
 
@@ -20,10 +20,9 @@ function BlockInfo() {
                 <PointerPageSpan text="Гидроциклы" />
 
             </div>
-
-            <FilterTitle text="Гидроциклы"
             
-            style={{fontSize: "30px", margin: "40px 0 0 0"}}/>
+            <h2 className={s.title}>{props.title}</h2>
+            
            
 
             <div className={s.blokInfoFilter}>

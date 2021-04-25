@@ -57,6 +57,34 @@
   height: 50px;
 }
 
+.checkboxWrap:nth-child(5) {
+  margin-right: 0;
+  height: 75px;
+}
+
+.filterPriseWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spanText {
+  display: inline-block;
+  color: #C4C4C4;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.spanNumb {
+  display: inline-block;
+  color: #2F3035;
+  border-bottom: 1px solid #2F3035;
+  font-size: 14px;
+}
+
 .filterPowerItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,5 +114,25 @@
 
 .btnWrap {
   margin-top: 20px;
+}
+
+.parameters {
+  color: #2F3035;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.blokFilterBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=BlockFilter.module.css.map */

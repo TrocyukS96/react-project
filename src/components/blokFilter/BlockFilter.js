@@ -8,9 +8,32 @@ import FilterLink from "./blockFilterComponents/filterLink/FilterLink";
 import FilterRadio from "./blockFilterComponents/filterRadio/FilterRadio";
 import FilterSelect from "./blockFilterComponents/filterSelect/FilterSelect";
 import FilterTitle from "./blockFilterComponents/filterTitle/FilterTitle";
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Slider from '@material-ui/core/Slider';
 
+const useStyles = makeStyles({
+    root: {
+      marginTop: "25px",  
+      width: "100%",
+    },
+  });
+  
+  function valuetext(value) {
+    return `${value}`;
+  }
+  
+
+   
 
 function BlockFilter() {
+
+    const classes = useStyles();
+    const [value, setValue] = React.useState([20, 37]);
+  
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
     return (
         <div className={s.blokFilter}>
 
@@ -49,7 +72,31 @@ function BlockFilter() {
 
             <div className={s.filterPrise, s.component}>
                 <FilterTitle text="Цена"/>
-                <input type="range"/>
+
+                <div className={classes.root}>
+                    
+                    <Slider
+                        value={value}
+                        onChange={handleChange}
+                        valueLabelDisplay="auto"
+                        aria-labelledby="range-slider"
+                        getAriaValueText={valuetext}
+                    />
+                </div>
+
+                <div className={s.filterPriseWrap}>
+                    <div className={s.span}>
+                        <span className={s.spanText}>от</span>
+                        <span className={s.spanNumb}>100 000</span>
+                    </div>
+
+                    <div className={s.to}>
+                        <span className={s.spanText}>до</span>
+                        <span className={s.spanNumb}>500 000</span>
+                    </div>
+
+
+                </div>
             </div>
 
             <div className={s.filterPower, s.component}>
@@ -133,31 +180,31 @@ function BlockFilter() {
 
                 <div className={s.checkboxWrap}>
 
-                    <FilterCheckbox text="Россия"/>
+                    <FilterCheckbox text="Россия" style={{minWidth: "95px", marginTop: "5px"}}/>
 
-                    <FilterCheckbox text="Германия"/>
+                    <FilterCheckbox text="Германия" style={{minWidth: "95px", marginTop: "5px"}}/>
 
-                    <FilterCheckbox text="Китай"/>
+                    <FilterCheckbox text="Китай" style={{minWidth: "95px", marginTop: "5px"}}/>
 
-                    <FilterCheckbox text="США"/>
+                    <FilterCheckbox text="США"style={{minWidth: "95px", marginTop: "5px"}}/>
 
                 </div> 
 
-                <FilterLink/>
+                <FilterLink style={{marginTop: "20px"}}/>
 
             </div>
 
-            <div className={s.blokFilterBottom, s.component}>
+            <div className={s.blokFilterBottom}>
                 <Btn text="ВЫБРАТЬ" 
                  style={{background: "#F0F0F4", padding: "15px 85px", width: "100%"}} />
-
-                <div className={s.parameters}>
-                    <FilterTitle text="Дополнительные параметры"
-                     style={{color: "#re2F3035"}}/>
+                
+                <div className={s.parametersWrap}>
+                    <span className={s.parameters}>Дополнительные параметры</span>
                 </div>
+
                 <Btn text="Сбросить фильтр" 
                  style={{background: "#FFF", border: "none", 
-                 borderBottom: "2px solid #C4C4C4", maxWidth: "115px", color:"#C4C4C4"}} />
+                 borderBottom: "2px solid #C4C4C4", marginTop: "15px", color:"#C4C4C4"}} />
             </div>
 
 

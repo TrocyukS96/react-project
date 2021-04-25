@@ -41,6 +41,28 @@
       margin-right: 0;
       height: 50px;
    }
+
+   &:nth-child(5){
+      margin-right: 0;
+      height: 75px;
+   }
+}
+
+.filterPriseWrap{
+   display: flex;
+   justify-content: space-between;
+}
+.spanText{
+   display: inline-block;
+   color: $lightGrey;
+   margin-right: 15px;
+   font-size: 14px;
+}
+.spanNumb{
+   display: inline-block;
+   color: $textColor;
+   border-bottom: 1px solid $textColor;
+   font-size: 14px;
 }
 
 .filterPowerItem{
@@ -60,4 +82,16 @@
 
 .btnWrap{
    margin-top: 20px;
+}
+.parameters{
+   color: $textColor;
+   text-align: center;
+   margin-top: 15px;
+}
+
+.blokFilterBottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
