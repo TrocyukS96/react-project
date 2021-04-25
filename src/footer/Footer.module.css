@@ -1,0 +1,77 @@
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  background-color: #F0F0F4;
+}
+
+.footerSubscribe {
+  max-width: 295px;
+  margin-right: 165px;
+}
+
+.footerText {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 40px 0 35px 0;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 33px;
+  margin: 0 0 0px 0;
+}
+
+.footerSocial {
+  margin: 85px 0 0 0;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item {
+  margin: 0 0 0 30px;
+}
+
+.item:nth-child(1) {
+  margin: 0;
+}
+
+.link {
+  width: 100%;
+}
+
+.footerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  font-size: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.footerBottomLink {
+  margin: 45px 80px 30px 100px;
+  display: block;
+  font-size: 10px;
+  color: #2F3035;
+}
+
+.footerBottomLink:nth-child(2) {
+  margin: 45px 0 30px 0;
+}
+/*# sourceMappingURL=Footer.module.css.map */

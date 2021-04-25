@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACC,eAAe,EAAE,IAAI;CACvB;;AAED,AAAA,WAAW,CAAC;EAET,YAAY,EAAE,KAAK;CACrB;;AAED,AAAA,MAAM,CAAC;EACJ,MAAM,EAAE,YAAY;CACtB;;AAED,AAAA,SAAS,CAAC;EACP,KAAK,EChBG,OAAO;CDiBjB",
+    "sources": [
+        "FooterItem.module.scss",
+        "../abstracts/variables.scss"
+    ],
+    "names": [],
+    "file": "FooterItem.module.css"
+}

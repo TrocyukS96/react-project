@@ -36,10 +36,9 @@ function Footer() {
 
         </div>
 
-        <FooterItem title="Информация" item1="О компании" item2="Контакты" item3="Акции" item4="Магазины" link="Договор оферты"/>
+        <FooterItem title="Информация" item1="О компании" item2="Контакты" item3="Акции" item4="Магазины"/>
 
-        <FooterItem title="Интернет-магазин" item1="Доставка и самов" item2="Оплата" item3="Возврат-обмен" item4="Новости" 
-         link="Политика обработки персональных данных"/>
+        <FooterItem title="Интернет-магазин" item1="Доставка и самов" item2="Оплата" item3="Возврат-обмен" item4="Новости" />
 
 
 
@@ -76,6 +75,12 @@ function Footer() {
         </div>
 
 
+      </div>
+
+      <div className={s.footerBottom}>
+          <a className={s.footerBottomLink}>Договор оферты</a>
+
+          <a className={s.footerBottomLink}>Политика обработки персональных данных</a>
       </div>
 
     </div>

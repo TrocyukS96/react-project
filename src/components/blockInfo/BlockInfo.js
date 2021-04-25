@@ -1,6 +1,6 @@
 import React from "react";
 
-import FilterTitle from "./../blokFilter/blockFilterComponents/filterTitle/FilterTitle";
+
 import PointerPageSpan from "./../pointerPage/PointerPageSpan";
 
 import BurgerLeft from "./../../assets/image/BlokInfo/burgerLeft.svg";
@@ -14,8 +14,8 @@ function BlockInfo(props) {
         <div className={s.blokInfo}>
 
             <div className={s.LinkWrap}>
-
-                <PointerPageSpan text="Главная" />
+                    
+                <PointerPageSpan text="Главная"  />
         
                 <PointerPageSpan text="Гидроциклы" />
 

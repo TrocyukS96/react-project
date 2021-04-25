@@ -20,7 +20,7 @@ function FooterItem(props) {
             <li className={s.item}><a className={s.itemLink} href="#">{props.item4}</a></li>
 
           </ul>
-          <a className={s.link} href="#">{props.link}</a>
+          
         </div>
 
       

@@ -8,7 +8,7 @@
 }
 
 .footer {
-   display: flex;
+   
    background-color: $baseColor;
 }
 
@@ -26,7 +26,7 @@
 .form {
    display: flex;
    max-height: 33px;
-   margin: 0 0 90px 0;
+   margin: 0 0 0px 0;
 }
 
 
@@ -54,4 +54,23 @@
 
 .link {
    width: 100%;
+}
+
+
+.footerBottom{
+   display: flex;
+   max-width: 1170px;
+   margin: 0 auto;
+   font-size: 12px;
+   justify-content: center;
+   cursor: pointer;
+}
+.footerBottomLink{
+   margin: 45px 80px 30px 100px;
+   display: block;
+   font-size: 10px;
+   color: $textColor;
+   &:nth-child(2){
+   margin: 45px 0 30px 0;
+   }
 }
