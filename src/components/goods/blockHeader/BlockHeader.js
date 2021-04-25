@@ -5,6 +5,7 @@ import s from './BlockHeader.module.scss';
 
 
 function BlockHeader(props) {
+
    return (
       <div className={s.goodsHeader}>
          <h2 className={s.goodsTitle}>{props.text}</h2>

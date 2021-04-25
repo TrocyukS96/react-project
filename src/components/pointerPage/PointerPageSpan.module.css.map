@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAA;EACZ,QAAQ,EAAE,QAAQ;EAClB,KAAK,ECIG,OAAO;EDHf,MAAM,EAAE,aAAa;CAiBxB;;AApBD,AAKI,gBALY,AAKX,QAAQ,CAAA;EACL,OAAO,EAAE,EAAE;EACX,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,gDAAgD,CAAC,YAAa,CAAC,SAAS;EAEpF,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,KAAK;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACf;;AAdL,AAgBQ,gBAhBQ,AAeX,UAAW,CAAA,CAAC,CACR,QAAQ,CAAA;EACL,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "PointerPageSpan.module.scss",
+        "../../abstracts/variables.scss"
+    ],
+    "names": [],
+    "file": "PointerPageSpan.module.css"
+}

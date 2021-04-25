@@ -9,7 +9,8 @@ import CardCatalog from "./cardCatalog/CardCatalog";
 function Catalog() {
     return (
         <div>
-            <BlockInfo title="Гидроциклы"/>
+
+            <BlockInfo />
             
             <div className={s.CatalogContainer}>
                 <BlockFilter />

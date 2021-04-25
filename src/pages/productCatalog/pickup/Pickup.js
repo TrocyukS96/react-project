@@ -12,7 +12,7 @@ function Pickup() {
                     <span className={s.pickupSearchShop}>Магазин</span>
                     <form>
                         <input type="text" placeholder="" />
-                        <button type="submit"><img src={pickupSearchImg} alt="search" /></button>
+                        <button type="submit"><img className={s.searchImgButton} src={pickupSearchImg} alt="search" /></button>
                     </form>
                 </div>
                 <div className={s.radioPickup}>
