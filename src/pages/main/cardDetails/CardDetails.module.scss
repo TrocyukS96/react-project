@@ -27,21 +27,16 @@
     &:hover {
         box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
         transform: scaleX(1.1);
-
     }
 
     & h3 {
         @include text-edit('SF Pro Display', 700, 1.4rem, 1.2);
-
     }
 
     & .cardDetailsLink {
         position: absolute;
         bottom: 14px;
         left: 20px;
-
-
-
     }
 }
 
@@ -61,3 +56,4 @@
         right: -10px;
     }
 }
+
