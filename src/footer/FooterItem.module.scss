@@ -19,6 +19,19 @@ a {
 
 .arrow{
    display: none;
+   position: relative;
+   &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      background-image: url("./../assets/image/arrow/Back.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 12px;
+      height: 10px;
+   }
+   cursor: pointer;
 }
 
 .itemLink {
@@ -42,6 +55,12 @@ a {
 }
 
 
+@media (max-width: 1000px){
+   .footerItem{
+      margin-right: 40px;
+   }
+}   
+
 @media (max-width: 850px){
    .footerItem{
       margin: 0;
@@ -60,5 +79,19 @@ a {
 
    .list{
       display: none;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .titleWrap{
+      justify-content: space-between;
+           
+   }
+   .title{
+      margin: 0 0 0 20px;
+   }
+   .arrow::before{
+      
+      left: -40px;
    }
 }

@@ -19,6 +19,20 @@ a {
 
 .arrow {
   display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  background-image: url("./../assets/image/arrow/Back.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 12px;
+  height: 10px;
 }
 
 .itemLink {
@@ -34,6 +48,12 @@ a {
   }
   .list {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footerItem {
+    margin-right: 40px;
   }
 }
 
@@ -55,6 +75,20 @@ a {
   }
   .list {
     display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .titleWrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .title {
+    margin: 0 0 0 20px;
+  }
+  .arrow::before {
+    left: -40px;
   }
 }
 /*# sourceMappingURL=FooterItem.module.css.map */

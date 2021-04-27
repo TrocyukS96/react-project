@@ -15,7 +15,7 @@ function FooterItem(props) {
        <div style={props.style} className={s.footerItem}>
           <div className={s.titleWrap}>
             <h4 className={s.title}>{props.title}</h4>
-            <span  className={s.arrow}>w</span>  
+            <span  className={s.arrow}></span>  
           </div>
          
 
