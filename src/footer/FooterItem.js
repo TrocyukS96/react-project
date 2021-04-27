@@ -6,11 +6,18 @@ import s from './FooterItem.module.scss';
 
 
 function FooterItem(props) {
+
+  
+
+
   return (
    
        <div style={props.style} className={s.footerItem}>
-
-          <h4 className={s.title}>{props.title}</h4>
+          <div className={s.titleWrap}>
+            <h4 className={s.title}>{props.title}</h4>
+            <span  className={s.arrow}>w</span>  
+          </div>
+         
 
           <ul className={s.list}>
 

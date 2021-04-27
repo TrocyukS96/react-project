@@ -9,11 +9,56 @@ a {
    margin-right: 100px;
 }
 
-.title {
+.titleWrap{
+   display: flex;
    margin: 40px 0 7px 0;
+}
+.title {
+   margin-right: 10px;
+}
+
+.arrow{
+   display: none;
 }
 
 .itemLink {
    color: $textColor
 }
 
+
+@media (max-width: 1199.98px) { 
+
+   .footerItem {
+
+      margin-right: 70px;
+   }
+
+   .item{
+      margin-top: 5px;
+   }
+   .list{
+      margin-right: 10px;
+   }
+}
+
+
+@media (max-width: 850px){
+   .footerItem{
+      margin: 0;
+      width: 100%;
+   }
+
+   .titleWrap{
+      justify-content: center;
+      padding: 10px 0;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+   }
+   .arrow{
+      display: inline-block;
+   }
+
+   .list{
+      display: none;
+   }
+}
