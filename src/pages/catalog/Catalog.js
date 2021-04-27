@@ -4,6 +4,7 @@ import s from './Catalog.module.scss';
 import BlockInfo from "./../../components/blockInfo/BlockInfo";
 import BlockFilter from "./../../components/blokFilter/BlockFilter";
 import CardCatalog from "./cardCatalog/CardCatalog";
+import Pagination from "./pagination/Pagination";
 import img11 from "../../assets/image/cardCatalog/img11.svg";
 import img12 from "../../assets/image/cardCatalog/img12.svg";
 import img13 from "../../assets/image/cardCatalog/img13.svg";
@@ -103,7 +104,9 @@ function Catalog() {
                     <CardCatalog title={data12.title} img={data12.img} cost={data12.cost} />
                 </div>
             </div>
-          
+            <div>
+                <Pagination />
+            </div>
         </div>
 
 
