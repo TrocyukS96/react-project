@@ -1,0 +1,36 @@
+@import './../../../abstracts/variables.scss';
+@import './../../../abstracts/mixins.scss';
+
+
+
+@font-face {
+  font-family: 'Barlow';
+  src: url(./../../../assets/fonts/Barlow-Bold.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagination {
+  @include text-edit('Barlow', 400, 1.125rem, 1.2);
+  background: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 70px auto 100px 30%;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  color: blue;
+}
+
+.pagination a:hover:not(.active) {
+  border: 2px solid #1C62CD;
+}
+
