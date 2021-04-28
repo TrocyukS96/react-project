@@ -17,27 +17,31 @@ a {
    margin-right: 10px;
 }
 
-.arrow{
-   display: none;
-   position: relative;
-   &::before{
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      background-image: url("./../assets/image/arrow/Back.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      width: 12px;
-      height: 10px;
-   }
-   cursor: pointer;
-}
+
 
 .itemLink {
    color: $textColor
 }
 
+/***********Accordion*******/
+.input{
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   display: block;
+   transition: 2s;
+}
+.input:checked ~.titleWrap{
+   border-bottom: none;
+   
+}
+.input:checked ~.titleWrap::before{
+   border-bottom: none;
+   transform: rotate(180deg);
+}
+
+/***********Accordion  END*******/
 
 @media (max-width: 1199.98px) { 
 
@@ -72,14 +76,30 @@ a {
       padding: 10px 0;
       border-top: solid 1px black;
       border-bottom: solid 1px black;
+      position: relative;
+      &::before{
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: 175px;
+         background-image: url("./../assets/image/arrow/Back.svg");
+         background-repeat: no-repeat;
+         background-size: 100%;
+         width: 12px;
+         height: 10px;
+      }
    }
-   .arrow{
-      display: inline-block;
-   }
+
 
    .list{
       display: none;
    }
+
+   .input:checked ~ .list{
+      display: block;
+      margin-left: 20px;
+   }
+   
 }
 
 @media (max-width: 575.98px) {
@@ -90,8 +110,8 @@ a {
    .title{
       margin: 0 0 0 20px;
    }
-   .arrow::before{
+   .titleWrap::before{
       
-      left: -40px;
+      left: 185px;
    }
 }

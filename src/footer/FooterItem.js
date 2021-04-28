@@ -13,10 +13,13 @@ function FooterItem(props) {
   return (
    
        <div style={props.style} className={s.footerItem}>
-          <div className={s.titleWrap}>
+
+          <input className={s.input} id={props.id} type="checkbox"/>
+          
+          <label for={props.id} className={s.titleWrap}>
             <h4 className={s.title}>{props.title}</h4>
-            <span  className={s.arrow}></span>  
-          </div>
+          
+          </label>
          
 
           <ul className={s.list}>
