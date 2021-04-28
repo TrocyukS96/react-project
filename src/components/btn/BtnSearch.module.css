@@ -17,7 +17,16 @@
   text-shadow: 0 0 1px #333, 0 0 1px #333;
 }
 
+.btnSearch:nth-child(1) {
+  min-width: 215px;
+}
+
+.btnSearch:nth-child(2) {
+  min-width: 205px;
+}
+
 .btnSearch:last-child {
   margin: 0;
+  min-width: 300px;
 }
 /*# sourceMappingURL=BtnSearch.module.css.map */

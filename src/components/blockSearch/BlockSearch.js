@@ -23,9 +23,9 @@ function BlockSearch() {
                 
                 style={{width: "100%", height: "50px", backgroundColor: "#F0F0F4" }}/>
                 
-                <Btn text="Искать"
+                <button className={s.Btn}>Искать</button>    
+
                 
-                style={{background: "#1C62CD", position: "absolute", right: "0", padding: "16px 40px", fontSize: "14px", fontWeight: "700" }}  />
                 
             </form>
 
