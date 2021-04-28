@@ -31,3 +31,14 @@
 .tabs a:active {
     border-bottom: 2px solid #1C62CD;
 }
+
+@media screen and (max-width:900px) {
+    .tabs {
+     flex-direction: column;
+        width: 300px;
+        height: 480px;
+        background: white;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+}

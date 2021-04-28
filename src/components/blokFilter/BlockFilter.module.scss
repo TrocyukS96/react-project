@@ -95,3 +95,9 @@
   align-items: center;
   margin-top: 40px;
 }
+
+@media screen and (max-width:900px) {
+   .blokFilter {
+      display: none;
+   }
+}

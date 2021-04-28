@@ -10,7 +10,7 @@ function Pickup() {
             <div className={s.pickupSearchRadioContainer}>
                 <div className={s.pickupSearch}>
                     <span className={s.pickupSearchShop}>Магазин</span>
-                    <form>
+                    <form className={s.pickupSearchInput}>
                         <input type="text" placeholder="" />
                         <button type="submit"><img className={s.searchImgButton} src={pickupSearchImg} alt="search" /></button>
                     </form>
@@ -28,7 +28,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyTitlle}>Режим работы</div>
                     <div className={s.pickupInfoBuyTitlle}>Доступно</div>
                     <div className={s.pickupInfoBuyTitlle}>Количество</div>
-                    <div className={s.pickupInfoBuyTitlle}></div>
+                    <div className={s.pickupInfoBuyTitlle}>"</div>
                     <div className={s.pickupInfoBuyShopAddress}>Москва, ул. Науки 25</div>
                     <div className={s.pickupSubGrid}>
                         <div className={s.pickupInfoBuyText}>пн-сб:</div>
