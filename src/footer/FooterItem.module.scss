@@ -25,7 +25,7 @@ a {
 
 /***********Accordion*******/
 .input{
-   position: absolute;
+   
    top: 0;
    left: 0;
    opacity: 0;
@@ -93,11 +93,12 @@ a {
 
    .list{
       display: none;
+      margin-left: 20px;  
    }
 
    .input:checked ~ .list{
       display: block;
-      margin-left: 20px;
+      
    }
    
 }

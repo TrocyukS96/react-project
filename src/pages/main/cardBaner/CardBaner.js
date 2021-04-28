@@ -11,15 +11,15 @@ function CardBaner() {
             <div className={s.banerImgWrap}>
                 <img className={s.banerImg} src={carOne} alt="#" />
                 <img className={s.banerImg} src={carTwo} alt="#" />
+                
             </div>
-            
-            
             <p className={s.banerText}> CКИДКИ на все запчасти до 70%</p>
-
-            <Btn text="Посмотреть Всё"
+                <button className={s.banerBtn}>Посмотреть Всё</button>
             
-            style={{background: "#FFF", textAlign: "center", fontSize: "24px", padding: "20px 40px", 
-            textTransform: "uppercase",color:"#2F3035", fontWeight: "700" }}/>
+            
+           
+
+            
 
         </div>
     );
