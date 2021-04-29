@@ -98,6 +98,7 @@
   margin-top: 40px;
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 1199.98px) { 
    .blokFilter{
@@ -108,6 +109,10 @@
 }
 @media (max-width: 835.98px) { 
    .blokFilter{
+=======
+@media screen and (max-width:900px) {
+   .blokFilter {
+>>>>>>> 81d7e75cdaba20c1a2a70aebb1de5742f95bb92e
       display: none;
    }
 }

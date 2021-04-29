@@ -1,7 +1,7 @@
 @import './../../abstracts/variables.scss';
 
 
-.burger {
+.burgerMenu {
    position: fixed;
    top: 34px;
    left: 10px;
@@ -11,8 +11,8 @@
    display: none;
 }
 
-.burgerItem::before,
-.burgerItem::after {
+.burgerInner::before,
+.burgerInner::after {
    content: "";
    width: 35px;
    height: 3px;
@@ -23,11 +23,11 @@
 
 }
 
-.burgerItem::after {
+.burgerInner::after {
    margin-top: 10px;
 }
 
-.burgerItem span {
+.burgerInner span {
    margin-top: 10px;
 
    width: 35px;
@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width:1200px) {
-   .burger {
+   .burgerMenu {
       display: block;
    }
 

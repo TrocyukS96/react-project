@@ -9,3 +9,17 @@
     grid-auto-rows: 410px;
     gap: 30px;
 }
+
+@media screen and (max-width:1170px) {
+    .cardCatalogContainer {
+        grid-template-columns: 270px 270px;
+        grid-auto-rows: 410px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .cardCatalogContainer {
+        grid-template-columns: 270px;
+        //grid-auto-flow: dense;
+    }
+}

@@ -37,6 +37,20 @@ function Slider() {
          <Swiper
             className="swiper" tag="ul" navigation spaceBetween={30}
             slidesPerView={4}
+            breakpoints={{
+               1200: { 
+               slidesPerView: 4 },
+               768: { 
+               slidesPerView: 3,
+               spaceBetween: 20 },
+               640:{
+                  width: 640,
+                  slidesPerView: 2
+               },
+               320:{
+                  slidesPerView: 1
+               }
+               }}
             onInit={(swiper) => console.log('Swiper initialized!', swiper)}
             onSlideChange={(swiper) => {
                console.log('Slide index changed to: ', swiper.activeIndex);
