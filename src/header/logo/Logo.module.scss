@@ -3,10 +3,52 @@
    top: 25px;
    left: 50%;
    transform: translateX(-50%);
+
+   .logoInner {
+      position: relative;
+
+      img {
+         position: absolute;
+      }
+   }
+
+   .img1 {
+      top: 0;
+      left: -28px;
+   }
+
+   .img2 {
+      top: 11px;
+      left: 11px;
+   }
+
+
+   .img3 {
+      top: 6px;
+      /* right: 0; */
+      left: -9px;
+   }
+
+   .imgTxt {
+      bottom: -67px;
+      left: 50%;
+      transform: translate(-50%);
+   }
+
 }
 
 @media screen and (max-width:1200px) {
    .logo {
       top: 15px;
+
+      .img1,
+      .img2,
+      .img3 {
+         display: none;
+      }
+
+      .imgTxt {
+         bottom: -46px;
+      }
    }
 }

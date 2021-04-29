@@ -42,13 +42,14 @@ function Slider() {
                slidesPerView: 4 },
                768: { 
                slidesPerView: 3,
-               spaceBetween: 20 },
+               spaceBetween: 10 },
                640:{
                   width: 640,
                   slidesPerView: 2
                },
                320:{
-                  slidesPerView: 1
+                  slidesPerView: 1,
+                  spaceBetween: 10 
                }
                }}
             onInit={(swiper) => console.log('Swiper initialized!', swiper)}

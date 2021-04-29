@@ -12,10 +12,10 @@ function Nav() {
          <div className={s.navigationLeft}>
             <ul className={s.list}>
                <li className={s.listItem}>
-                  <a className={s.navigationLeftLink} href="#" >Магазины</a>
+                  <a className={s.navigationLeftLink} activeClassname={s.active} href="#" >Магазины</a>
                </li>
                <li className={s.listItem}>
-                  <a className={s.navigationLeftLink} href="#" >Акции</a>
+                  <a className={s.navigationLeftLink} activeClassname={s.active} href="#" >Акции</a>
                </li>
                <li className={s.listItem}>
                   <a className={s.listLink} href="#" >Доставка и оплата</a>
@@ -29,7 +29,7 @@ function Nav() {
          </div>
          <ul className={s.icons}>
             <li className={s.icon}>
-               <a className={s.iconLink} href="#"><img className={s.iconImg} src={heart} alt="heart-icon" /></a>
+               <a className={s.iconLink} activeClassname={s.active} href="#"><img className={s.iconImg} src={heart} alt="heart-icon" /></a>
             </li>
             <li className={s.icon}>
                <a className={s.iconLink} href="#"><img className={s.iconImg} src={person} alt="person-icon" /></a>
