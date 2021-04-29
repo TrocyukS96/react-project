@@ -5,6 +5,7 @@ import buy from "./../../assets/image/icons/buy.svg";
 import Logo from '../logo/Logo';
 import Burger from '../burger/Burger';
 
+
 function Nav() {
    return (
       <nav className={s.navigation}>
