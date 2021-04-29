@@ -26,6 +26,8 @@ function CardProduct() {
 
   return (
 
+
+ 
     <div className={s.cardProductContener}>
 
       <div className={s.cardProductLeftWrap}>
@@ -78,25 +80,31 @@ function CardProduct() {
               
             </div>  
             
-            
-            <DescString text1="Производитель" text2="Канада"/>
-            <DescString text1="Количество мест, шт: " text2="3"/>
-            <DescString text1="Мощность, л.с." text2="155"/>
-            <DescString text1="Тип двигателя" text2="Бензиновый"/>
-            <DescString text1="Год выпуска" text2="2018"/>
+            <div className={s.DescStringWrap}>
+              <DescString text1="Производитель" text2="Канада"/>
+              <DescString text1="Количество мест, шт: " text2="3"/>
+              <DescString text1="Мощность, л.с." text2="155"/>
+              <DescString text1="Тип двигателя" text2="Бензиновый"/>
+              <DescString text1="Год выпуска" text2="2018"/>
 
-            <FilterLink style={{margin: "25px 0 0 0", color: "#1C62CD"}}/>
+              <FilterLink style={{margin: "25px 0 0 0", color: "#1C62CD"}}/>
+            </div>
+         
           </div>
-          <Btn    text="Купить" 
-              style={{background: "#1C62CD", padding: "16px 55px", margin: "45px 0 0 0", fontSize: "14px",
-              textTransform: "uppercase" }} />
+         
 
         </div>
+       
 
       </div>
+      
+      <button className={s.cardProductBtn}>Купить</button>
+    
 
+   
+   
 
-    </div>
+  </div>  
     
     
     

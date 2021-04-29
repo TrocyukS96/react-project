@@ -49,3 +49,37 @@
 .BurgerLeft{
    margin-right: 10px;
 }
+
+
+@media (max-width: 1199.98px) { 
+   .blokInfo{
+      padding: 0 20px;
+   }
+
+}
+@media (max-width: 835.98px) { 
+   .blokInfo{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+   }
+
+   .blokInfoFilter{
+      flex-direction: column-reverse;
+   }
+   .FliterLeft{
+      margin-top: 20px;
+   }
+   .title{
+      font-size: 26px;
+   }
+}
+@media (max-width: 535.98px) { 
+   .FliterLeft{
+      overflow-x: scroll;
+      min-width: 485px;
+   }
+   .title{
+      font-size: 24px;
+   }
+}

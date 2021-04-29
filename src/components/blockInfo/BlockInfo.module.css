@@ -70,4 +70,45 @@
 .BurgerLeft {
   margin-right: 10px;
 }
+
+@media (max-width: 1199.98px) {
+  .blokInfo {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 835.98px) {
+  .blokInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .blokInfoFilter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .FliterLeft {
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 535.98px) {
+  .FliterLeft {
+    overflow-x: scroll;
+    min-width: 485px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
 /*# sourceMappingURL=BlockInfo.module.css.map */

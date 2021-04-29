@@ -6,13 +6,14 @@ span{
 }
 
 .cardProductContener{
-    
     display: flex;
     margin: 45px 0 85px 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cardProductLeftWrap{
-    width: 100%;
+    width: 50%;
 }
 .cardProduct{
     max-width: 500px;
@@ -61,7 +62,7 @@ span{
 }
 
 .cardProductRightWrap{
-    width: 100%;
+    width: 50%;
 }
 .cardProductInfoImg{
     display: flex;
@@ -105,5 +106,103 @@ span{
     &:hover{
         text-shadow: 0 0 1px #333, 0 0 1px #333;
         border-bottom: 2px solid $accentColor;
+    }
+}
+
+.cardProductBtn{
+    background: #1C62CD;
+    padding: 16px 55px;
+    font-size: 14px;
+    text-transform: uppercase;
+    max-width: 180px ;
+    color: #fff;
+    transform: translate(80px, -70px);
+}
+
+.DescStringWrap{}
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1199.98px) { 
+
+    .cardProductImg{
+        margin-top: 55px;
+        max-width: 460px;
+    }
+    .cardProductLeftWrap{
+       padding-left: 10px; 
+    }
+
+}
+
+@media (max-width: 991.98px) { 
+    .cardProductImg{
+      max-width: 350px;  
+    }
+    .SpanTop{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .SpanDiscount{
+        font-size: 23px;
+    }
+    .SpanPrice{
+        font-size: 33px;
+    }
+    .ProductName{
+        font-size: 25px;
+    }
+    .InfoLink{
+        font-size: 18px;
+        &:nth-child(1){
+            margin-right: 25px;
+        }
+    }
+    .cardProductBtn{
+        transform: translate(80px, -15px);
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .cardProductContener{
+        flex-direction: column;
+        align-items:center;
+    }
+    .cardProductRightWrap{
+        order: -1;
+        width: 80%;
+    }
+    .cardProductLeftWrap{
+        padding: 0;
+    }
+    .DescStringWrap{
+        display: none;
+    }
+    .InfoLinkWrap{
+        display: none;
+    }
+
+    .cardProductBtn{
+        transform: translate(0, 45px);
+    }
+    .cardProductImg{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ProductName{
+        font-size: 22px;
+    }
+    .SpanDiscount{
+        font-size: 18px;
+    }
+    .SpanPrice{
+        font-size: 26px;
+    }
+    .cardProductBtn{
+        width: 90%;
     }
 }

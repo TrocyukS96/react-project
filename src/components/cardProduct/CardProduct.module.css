@@ -7,10 +7,15 @@ span {
   display: -ms-flexbox;
   display: flex;
   margin: 45px 0 85px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cardProductLeftWrap {
-  width: 100%;
+  width: 50%;
 }
 
 .cardProduct {
@@ -71,7 +76,7 @@ span {
 }
 
 .cardProductRightWrap {
-  width: 100%;
+  width: 50%;
 }
 
 .cardProductInfoImg {
@@ -132,5 +137,114 @@ span {
 .InfoLink:hover {
   text-shadow: 0 0 1px #333, 0 0 1px #333;
   border-bottom: 2px solid #1C62CD;
+}
+
+.cardProductBtn {
+  background: #1C62CD;
+  padding: 16px 55px;
+  font-size: 14px;
+  text-transform: uppercase;
+  max-width: 180px;
+  color: #fff;
+  -webkit-transform: translate(80px, -70px);
+          transform: translate(80px, -70px);
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1199.98px) {
+  .cardProductImg {
+    margin-top: 55px;
+    max-width: 460px;
+  }
+  .cardProductLeftWrap {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cardProductImg {
+    max-width: 350px;
+  }
+  .SpanTop {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .SpanDiscount {
+    font-size: 23px;
+  }
+  .SpanPrice {
+    font-size: 33px;
+  }
+  .ProductName {
+    font-size: 25px;
+  }
+  .InfoLink {
+    font-size: 18px;
+  }
+  .InfoLink:nth-child(1) {
+    margin-right: 25px;
+  }
+  .cardProductBtn {
+    -webkit-transform: translate(80px, -15px);
+            transform: translate(80px, -15px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cardProductContener {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardProductRightWrap {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 80%;
+  }
+  .cardProductLeftWrap {
+    padding: 0;
+  }
+  .DescStringWrap {
+    display: none;
+  }
+  .InfoLinkWrap {
+    display: none;
+  }
+  .cardProductBtn {
+    -webkit-transform: translate(0, 45px);
+            transform: translate(0, 45px);
+  }
+  .cardProductImg {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ProductName {
+    font-size: 22px;
+  }
+  .SpanDiscount {
+    font-size: 18px;
+  }
+  .SpanPrice {
+    font-size: 26px;
+  }
+  .cardProductBtn {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=CardProduct.module.css.map */

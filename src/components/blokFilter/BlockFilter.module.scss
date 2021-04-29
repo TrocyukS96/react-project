@@ -4,6 +4,7 @@
 .blokFilter{
    max-width: 300px;
    margin-right: 10px;
+   min-width: 300px;
 }
 
 .component{
@@ -37,6 +38,7 @@
    justify-content: space-between;
    margin-top: 20px;
    margin-right: 60px;
+   
    &:nth-child(3){
       margin-right: 0;
       height: 50px;
@@ -94,4 +96,18 @@
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+}
+
+
+@media (max-width: 1199.98px) { 
+   .blokFilter{
+      padding-left: 10px;
+   }
+   
+   
+}
+@media (max-width: 835.98px) { 
+   .blokFilter{
+      display: none;
+   }
 }
