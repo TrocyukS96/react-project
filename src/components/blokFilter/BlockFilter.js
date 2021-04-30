@@ -47,20 +47,28 @@ function BlockFilter() {
             
             <div className={s.availability, s.component}>
 
-                <FilterTitle text="Наличие"/>
-
+                <input className={s.input} id="1" type="checkbox" />
+                <label for="1" className={s.titleWrap}>
+                    <h4 className={s.title}>Наличие</h4>
+                
+                </label>
+                
                 <div className={s.checkboxWrap}>
 
                     <FilterCheckbox text="В наличии"/>
-                    <FilterCheckbox text="Под заказ"/>
+                    <FilterCheckbox text="Под заказ" />
 
                 </div>   
             </div>
 
             <div className={s.filterNews, s.component}>
 
-                <FilterTitle text="Новинки"/>
-
+            <input className={s.input} id="2" type="checkbox" />
+                <label for="2" className={s.titleWrap}>
+                    <h4 className={s.title}>Новинки</h4>
+                
+                </label>    
+                
                 <div className={s.checkboxWrap}>
 
                     <FilterRadio text="Все"/>
@@ -71,9 +79,14 @@ function BlockFilter() {
             </div> 
 
             <div className={s.filterPrise, s.component}>
-                <FilterTitle text="Цена"/>
+                <input className={s.input} id="3" type="checkbox"/>
+                    <label for="3" className={s.titleWrap}>
+                        <h4 className={s.title}>Цена</h4>
+                    
+                    </label>
+                
 
-                <div className={classes.root}>
+                <div className={classes.root, s.a}>
                     
                     <Slider
                         value={value}
@@ -118,8 +131,12 @@ function BlockFilter() {
             </div>        
             
             <div className={s.filterBrand, s.component}>
-
-                <FilterTitle text="Бренд"/>
+                <input className={s.input} id="4" type="checkbox" />
+                        <label for="4" className={s.titleWrap}>
+                            <h4 className={s.title}>Бренд</h4>
+                        
+                        </label>
+                
 
                 <div className={s.checkboxWrap}>
 
@@ -135,7 +152,12 @@ function BlockFilter() {
             
 
             <div className={s.filterModel, s.component}>
-                <FilterTitle text="Модель"/>
+                <input className={s.input} id="5" type="checkbox" />
+                            <label for="5" className={s.titleWrap}>
+                                <h4 className={s.title}>Модель</h4>
+                            
+                            </label>
+                
                 <Input type="text" placeholder="Введите модель"
                 
                 style={{border: "1px solid #E0E0E0", width: "100%", marginTop: "20px", height: "30px"}}/>
@@ -156,7 +178,11 @@ function BlockFilter() {
             </div>
         
             <div className={s.filterDicounts, s.component}>
-                <FilterTitle text="Акции"/>
+                <input className={s.input} id="6" type="checkbox" />
+                            <label for="6" className={s.titleWrap}>
+                                <h4 className={s.title}>Акции</h4>
+                            
+                            </label>
                 
                 <div className={s.btnWrap}>
                     <Btn text="Sale" 
@@ -175,8 +201,12 @@ function BlockFilter() {
             </div>
 
             <div className={s.country, s.component}>
+                <input className={s.input} id="7" type="checkbox" />
+                                <label for="7" className={s.titleWrap}>
+                                    <h4 className={s.title}>Страны</h4>
+                                
+                                </label>
 
-             <FilterTitle text="Страны"/>
 
                 <div className={s.checkboxWrap}>
 

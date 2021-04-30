@@ -8,7 +8,7 @@
 }
 
 .component {
-   margin-top: 40px;
+   margin-top: 20px;
 }
 
 .FilterTitle {
@@ -40,21 +40,27 @@
 
 .checkboxWrap {
    display: flex;
+   display: none;
    flex-wrap: wrap;
    // max-width: 230px;
    justify-content: space-between;
    margin-top: 20px;
    margin-right: 60px;
 
-   &:nth-child(3) {
+   &:nth-child(2) {
+      margin-right: 0;
+      height: 50px;
+   }
+   &:nth-child(5) {
       margin-right: 0;
       height: 50px;
    }
 
-   &:nth-child(5) {
+   &:nth-child(4) {
       margin-right: 0;
       height: 75px;
    }
+  
 }
 
 .filterPriseWrap {
@@ -109,6 +115,44 @@
    margin-top: 40px;
 }
 
+.titleWrap{
+   display: block;
+   margin-left: 20px;
+   position: relative;
+   cursor: pointer;
+   &::before{
+      content: "";
+      position: absolute;
+      top: 15%;
+      left: -20px;
+      background-image: url("./../../assets/image/arrow/Back.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 12px;
+      height: 10px;
+      
+   }
+}
+/***********Accordion*******/
+
+.input{
+   
+   top: 0;
+   left: 0;
+   opacity: 0;
+   display: block;
+   transition: 2s;
+}
+
+.input:checked ~.titleWrap::before{
+   border-bottom: none;
+   transform: rotate(180deg);
+   top: 5%;
+}
+.input:checked ~ .checkboxWrap {
+   display: flex;
+}
+/***********Accordion  END*******/
 
 @media (max-width: 1199.98px) {
    .blokFilter {
