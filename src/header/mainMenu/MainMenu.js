@@ -3,34 +3,15 @@ import s from './MainMenu.module.scss'
 
 
 function MainMenu() {
+
+   const vehicles = ["Квадроциклы", "Катера", "Гидроциклы", "Лодки", "Вездеходы", "Снегоходы", "Двигатели", "Запчасти"]
+
+   let products = vehicles.map(vehicle => (<li className={s.menuItem}><a className={s.menuLink} href="#">{vehicle}</a></li>))
+
    return (
       <div className={s.menu}>
          <ul className={s.list}>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Квадроциклы</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Катера</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Гидроциклы</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Лодки</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Вездеходы</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Снегоходы</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Двигатели</a>
-            </li>
-            <li className={s.menuItem}>
-               <a className={s.menuLink} href="#">Запчасти</a>
-            </li>
-
+            {products}
          </ul>
       </div>
    );
