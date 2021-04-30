@@ -247,4 +247,13 @@ span {
     width: 90%;
   }
 }
+
+@media (max-width: 435.98px) {
+  .cardProductBtn {
+    max-width: 90%;
+  }
+  .ProductName {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=CardProduct.module.css.map */

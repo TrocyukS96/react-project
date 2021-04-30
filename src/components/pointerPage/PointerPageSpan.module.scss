@@ -3,21 +3,23 @@
 .pointerPageSpan{
     position: relative;
     color:$lightGrey;
-    margin: 45px 25px 0 0;
+    margin: 10px 25px 0 0;
 
-    &::before{
+    &::after{
         content: "";
         position: absolute;
         background: url("./../../assets/image/pointerPage/Back.svg") center/ cover no-repeat;
         
         top: 25%;
-        left: -13px;
+        right: -17px;
         width: 7px;
         height: 11px;
     }
-    &:nth-child(1){
-        &::before{
-            content: none;
-        }
+    &:last-child::after {
+        content: none;
+        
     }
+        
+        
+    
 }

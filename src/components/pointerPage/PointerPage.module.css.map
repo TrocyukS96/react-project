@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "PointerPage.module.scss"
+    ],
+    "names": [],
+    "file": "PointerPage.module.css"
+}
