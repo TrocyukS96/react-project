@@ -97,3 +97,16 @@
       transition: all 0.3s ease;
    }
 }
+
+
+@media screen and (max-width:768px) {
+   .goodsPrice {
+      max-width: 150px;
+   }
+
+   .sliderCard {
+      .bottomBtn {
+         bottom: 38px;
+      }
+   }
+}

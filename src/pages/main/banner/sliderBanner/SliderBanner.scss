@@ -33,15 +33,18 @@
       left: auto;
    }
 
-   img {
-      width: 100%;
-   }
+
 }
 
 @media screen and (max-width:1200px) {
    .sliderBanner {
       .swiper {
          width: 800px;
+      }
+
+      .swiper-button-next,
+      .swiper-container-rtl .swiper-button-prev {
+         right: 20px;
       }
    }
 }
@@ -51,6 +54,10 @@
       .swiper {
          width: 600px;
       }
+
+      img {
+         width: 100%;
+      }
    }
 }
 
@@ -58,6 +65,16 @@
    .sliderBanner {
       .swiper {
          width: 450px;
+      }
+
+
+   }
+}
+
+@media screen and (max-width:470px) {
+   .sliderBanner {
+      .swiper {
+         width: 300px;
       }
    }
 }

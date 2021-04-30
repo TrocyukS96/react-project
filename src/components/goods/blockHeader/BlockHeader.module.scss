@@ -50,10 +50,39 @@
    .goodsMenuItem:last-child {
       padding-right: 0;
    }
+}
+
+.goodsMenuLink {
+   @include text-edit ('SF Pro Display', 500, 0.9375rem, 1.2);
+
+   text-align: center;
+}
+
+
+
+@media screen and (max-width:1200px) {
+   .goodsHeader {
+      .goodsMenu {
+         overflow-x: scroll;
+      }
+   }
+
+   .goodsTitle {
+      text-align: center;
+      padding-bottom: 15px;
+
+   }
+
+   .goodsMenuItem {
+      margin-right: 40px;
+   }
+
+   .goodsMenuItem:first-child {
+      margin-left: 5px;
+   }
 
    .goodsMenuLink {
-      @include text-edit ('SF Pro Display', 500, 0.9375rem, 1.2);
-
-      text-align: center;
+      font-size: 1.4rem;
    }
+
 }

@@ -35,21 +35,22 @@ function Slider() {
 
       <div className="productSlider" >
          <Swiper
-            className="swiper" tag="ul" navigation spaceBetween={30}
+            className="swiper" tag="ul" pagination navigation spaceBetween={30}
             slidesPerView={4}
             breakpoints={{
                1200: { 
                slidesPerView: 4 },
                768: { 
                slidesPerView: 3,
-               spaceBetween: 10 },
+               spaceBetween: 40 },
                640:{
                   width: 640,
                   slidesPerView: 2
                },
                320:{
                   slidesPerView: 1,
-                  spaceBetween: 10 
+                  spaceBetween: 10
+                  
                }
                }}
             onInit={(swiper) => console.log('Swiper initialized!', swiper)}
