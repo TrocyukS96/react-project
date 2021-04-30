@@ -85,10 +85,10 @@ function Catalog() {
         <div>
 
             <BlockInfo title="Гидроциклы" />
-            
+
             <div className={s.CatalogContainer}>
                 <BlockFilter />
-
+                <div >
                 <div className={s.cardCatalogContainer}>
                     <CardCatalog title={data1.title} img={data1.img} cost={data1.cost} />
                     <CardCatalog title={data2.title} img={data2.img} cost={data2.cost} />
@@ -103,14 +103,15 @@ function Catalog() {
                     <CardCatalog title={data11.title} img={data11.img} cost={data11.cost} />
                     <CardCatalog title={data12.title} img={data12.img} cost={data12.cost} />
                 </div>
-            </div>
-            <div>
-                <Pagination />
+                    <div className={s.cardCatalogPaginationInner}>
+                        <Pagination />
+                    </div>
+                </div>
             </div>
         </div>
 
-
-    );
+    )
+        ;
 }
 
 export default Catalog;

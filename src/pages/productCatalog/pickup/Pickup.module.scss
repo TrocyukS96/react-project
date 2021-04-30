@@ -10,8 +10,7 @@
 
 
 .pickupContainer {
-    width: 1134px;
-    height: 484px;
+
 }
 
 .pickupSearchRadioContainer {
@@ -54,7 +53,9 @@
 }
 
 .radioPickup {
-    margin-right: 70px;
+    margin-right: 120px;
+    display: flex;
+
 }
 
 .radioPickupOne, .radioPickupTwo{
@@ -65,8 +66,8 @@
     opacity: 0.7;
 }
 
-.radioPickup:last-child {
-    padding-left: 0;
+.radioPickupTwo:last-child {
+    padding-right: 0;
 }
 
 .radioPickup input[type=radio] {
@@ -115,7 +116,11 @@
     opacity: 0.7;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1050px) {
+    .pickupSearchRadioContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .pickupSearch {
         color: chocolate;
         display: block;
@@ -133,8 +138,28 @@
         right: 10px;
     }
     .radioPickup {
-        display: flex;
+        margin-top: 20px;
         flex-direction: column;
-        align-items: flex-end;
+    }
+    .radioPickupMobile {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        min-width: 330px;
+        border-bottom: 0.5px solid #C4C4C4;
+        padding-bottom: 5px;
+    }
+    .radioPickupMobile:last-child {
+        margin-bottom: 0;
+    }
+    .radioPickup input[type=radio] {
+        height: 5px;
+        margin-top: 5px;
+        margin-left: 16px;
+
+    }
+    .radioPickupOne .radioPickupTwo{
+
     }
 }

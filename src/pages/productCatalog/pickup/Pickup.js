@@ -11,15 +11,20 @@ function Pickup() {
                 <div className={s.pickupSearch}>
                     <span className={s.pickupSearchShop}>Магазин</span>
                     <form className={s.pickupSearchInput}>
-                        <input type="text" placeholder="" />
-                        <button type="submit"><img className={s.searchImgButton} src={pickupSearchImg} alt="search" /></button>
+                        <input type="text" placeholder="Введите название магазина" />
+                        <button type="submit"><img className={s.searchImgButton} src={pickupSearchImg} alt="search" />
+                        </button>
                     </form>
                 </div>
                 <div className={s.radioPickup}>
-                    <input name="choosePickup" type="radio" />
-                    <label className={s.radioPickupOne}>Забрать сегодня</label>
-                    <input name="choosePickup" type="radio" />
-                    <label className={s.radioPickupTwo}>Заберу в течении недели</label>
+                    <div className={s.radioPickupMobile}>
+                        <input name="choosePickup" type="radio" />
+                        <label className={s.radioPickupOne}>Забрать сегодня</label>
+                    </div>
+                    <div className={s.radioPickupMobile}>
+                        <input name="choosePickup" type="radio" />
+                        <label className={s.radioPickupTwo}>Заберу в течении недели</label>
+                    </div>
                 </div>
             </div>
             <div className={s.pickupInfoBuyInner}>
@@ -28,7 +33,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyTitlle}>Режим работы</div>
                     <div className={s.pickupInfoBuyTitlle}>Доступно</div>
                     <div className={s.pickupInfoBuyTitlle}>Количество</div>
-                    <div className={s.pickupInfoBuyTitlle}>"</div>
+                    <div className={s.pickupInfoBuyTitlle}> </div>
                     <div className={s.pickupInfoBuyShopAddress}>Москва, ул. Науки 25</div>
                     <div className={s.pickupSubGrid}>
                         <div className={s.pickupInfoBuyText}>пн-сб:</div>

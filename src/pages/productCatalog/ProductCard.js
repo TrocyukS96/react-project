@@ -13,7 +13,7 @@ import Goods from "./../../components/goods/Goods";
 function ProductCard() {
     return (
 
-        <div>
+        <div >
             <PointerPage />
             
             <CardProduct />
