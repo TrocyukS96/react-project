@@ -47,7 +47,7 @@ function BlockFilter() {
             
             <div className={s.availability, s.component}>
 
-                <input className={s.input} id="1" type="checkbox" />
+                <input className={s.input} id="1" type="checkbox"  />
                 <label for="1" className={s.titleWrap}>
                     <h4 className={s.title}>Наличие</h4>
                 
@@ -86,7 +86,7 @@ function BlockFilter() {
                     </label>
                 
 
-                <div className={classes.root, s.a}>
+                <div className={s.root}>
                     
                     <Slider
                         value={value}
@@ -95,21 +95,23 @@ function BlockFilter() {
                         aria-labelledby="range-slider"
                         getAriaValueText={valuetext}
                     />
+
+                    <div className={s.filterPriseWrap}>
+                        <div className={s.span}>
+                            <span className={s.spanText}>от</span>
+                            <span className={s.spanNumb}>100 000</span>
+                        </div>
+
+                        <div className={s.to}>
+                            <span className={s.spanText}>до</span>
+                            <span className={s.spanNumb}>500 000</span>
+                        </div>
+
+
+                    </div>
                 </div>
 
-                <div className={s.filterPriseWrap}>
-                    <div className={s.span}>
-                        <span className={s.spanText}>от</span>
-                        <span className={s.spanNumb}>100 000</span>
-                    </div>
-
-                    <div className={s.to}>
-                        <span className={s.spanText}>до</span>
-                        <span className={s.spanNumb}>500 000</span>
-                    </div>
-
-
-                </div>
+                
             </div>
 
             <div className={s.filterPower, s.component}>
@@ -144,9 +146,12 @@ function BlockFilter() {
                     <FilterCheckbox text="Spark 2"/>
                     <FilterCheckbox text="Spark 3" style={{marginTop: "20px"}}/>
 
+
+
+                    <FilterLink style={{marginTop: "20px", marginRight: "55px"}}/> 
                 </div>
 
-                <FilterLink style={{marginTop: "20px"}}/>   
+                  
 
             </div>
             
@@ -171,9 +176,12 @@ function BlockFilter() {
                     <FilterCheckbox text="SeaDoo GTI 155"/>
 
                     <FilterCheckbox text="SeaDoo GTR 230"/>
+
+
+                    <FilterLink style={{marginRight: "55px"}} />
                 </div> 
 
-                <FilterLink/>
+               
 
             </div>
         
@@ -218,9 +226,12 @@ function BlockFilter() {
 
                     <FilterCheckbox text="США"style={{minWidth: "95px", marginTop: "5px"}}/>
 
+
+                    <FilterLink style={{marginTop: "20px", marginRight: "55px"}}/>
+
                 </div> 
 
-                <FilterLink style={{marginTop: "20px"}}/>
+                
 
             </div>
 

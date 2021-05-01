@@ -40,7 +40,7 @@
 
 .checkboxWrap {
    display: flex;
-   display: none;
+   
    flex-wrap: wrap;
    // max-width: 230px;
    justify-content: space-between;
@@ -55,6 +55,10 @@
       margin-right: 0;
       height: 50px;
    }
+   &:nth-child() {
+      margin-right: 0;
+      height: 50px;
+   }
 
    &:nth-child(4) {
       margin-right: 0;
@@ -66,6 +70,8 @@
 .filterPriseWrap {
    display: flex;
    justify-content: space-between;
+   width: 100%;
+   margin-top: 20px;
 }
 
 .spanText {
@@ -100,6 +106,7 @@
 
 .btnWrap {
    margin-top: 20px;
+   
 }
 
 .parameters {
@@ -133,6 +140,9 @@
       
    }
 }
+.root{
+
+}
 /***********Accordion*******/
 
 .input{
@@ -149,8 +159,14 @@
    transform: rotate(180deg);
    top: 5%;
 }
-.input:checked ~ .checkboxWrap {
-   display: flex;
+.input:checked ~ .checkboxWrap{
+   display: none;
+}
+input:checked ~ .btnWrap{
+   display: none;
+}
+input:checked ~ .root{
+   display: none;
 }
 /***********Accordion  END*******/
 

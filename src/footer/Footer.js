@@ -36,9 +36,9 @@ function Footer() {
 
         </div>
 
-        <FooterItem id="1" title="Информация" item1="О компании" item2="Контакты" item3="Акции" item4="Магазины"/>
+        <FooterItem id="f1" title="Информация" item1="О компании" item2="Контакты" item3="Акции" item4="Магазины"/>
 
-        <FooterItem id="2" title="Интернет-магазин" item1="Доставка и самов" item2="Оплата" item3="Возврат-обмен" item4="Новости" />
+        <FooterItem id="f2" title="Интернет-магазин" item1="Доставка и самов" item2="Оплата" item3="Возврат-обмен" item4="Новости" />
 
 
 
