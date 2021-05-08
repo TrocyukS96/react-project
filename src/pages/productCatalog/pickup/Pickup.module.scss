@@ -116,6 +116,14 @@
     opacity: 0.7;
 }
 
+.pickupBuy {
+    width: 140px;
+    height: 35px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background-color: #1C62CD;
+}
+
 @media screen and (max-width:1050px) {
     .pickupSearchRadioContainer {
         flex-direction: column;
@@ -159,7 +167,5 @@
         margin-left: 16px;
 
     }
-    .radioPickupOne .radioPickupTwo{
 
-    }
 }

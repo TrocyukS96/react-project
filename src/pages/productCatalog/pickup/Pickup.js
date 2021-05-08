@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Pickup.module.scss';
 import pickupSearchImg from "./../../../assets/image/pickup/pickupSearchImg.svg"
-import pickupBuyImg from "./../../../assets/image/pickup/pickupBuyImg.svg"
+// import pickupBuyImg from "./../../../assets/image/pickup/pickupBuyImg.svg"
 
 
 function Pickup() {
@@ -44,7 +44,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyText}>В наличии</div>
                     <div className={s.pickupInfoBuyText}>1</div>
                     <div>
-                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                        <button className={s.pickupBuy}>КУПИТЬ</button>
                     </div>
                     <div className={s.pickupInfoBuyShopAddress}>Москва, ул. Южная 134</div>
                     <div className={s.pickupSubGrid}>
@@ -56,7 +56,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyText}>В наличии</div>
                     <div className={s.pickupInfoBuyText}>1</div>
                     <div>
-                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                        <button className={s.pickupBuy}>КУПИТЬ</button>
                     </div>
                     <div className={s.pickupInfoBuyShopAddress}>Санкт-Петербург,
                         ул. Красная 19
@@ -70,7 +70,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyText}>Нет в наличии</div>
                     <div className={s.pickupInfoBuyText}>0</div>
                     <div>
-                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                        <button className={s.pickupBuy}>КУПИТЬ</button>
                     </div>
                     <div className={s.pickupInfoBuyShopAddress}>Киев, ул Шевченко 167</div>
                     <div className={s.pickupSubGrid}>
@@ -82,7 +82,7 @@ function Pickup() {
                     <div className={s.pickupInfoBuyText}>Нет в наличии</div>
                     <div className={s.pickupInfoBuyText}>0</div>
                     <div>
-                        <button><img src={pickupBuyImg} alt="buy" /></button>
+                        <button className={s.pickupBuy}>КУПИТЬ</button>
                     </div>
                 </div>
             </div>
