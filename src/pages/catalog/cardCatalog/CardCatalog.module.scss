@@ -1,6 +1,7 @@
 @import './../../../abstracts/variables.scss';
 @import './../../../abstracts/mixins.scss';
 
+
 @font-face {
   font-family: 'SF Pro Display';
   src: url(./../../../assets/fonts/SFProDisplay-Medium.woff);
@@ -54,7 +55,11 @@
 .buttonCart {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: 0;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px 0 0 0;
+  background-color: #1C62CD;
 }
 
 .titleCardCatalog {

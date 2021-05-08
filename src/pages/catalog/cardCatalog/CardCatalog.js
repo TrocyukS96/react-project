@@ -2,7 +2,7 @@ import React from "react";
 import s from './CardCatalog.module.scss';
 import favoritesImg from "./../../../assets/image/cardCatalog/favoritesImg.svg";
 import saleImg from "./../../../assets/image/cardCatalog/saleImg.svg";
-import cartImg from "./../../../assets/image/cardCatalog/cartImg.svg";
+import cartImgBuy from "./../../../assets/image/cardCatalog/cartImgBuy.png";
 import {NavLink} from "react-router-dom";
 
 
@@ -18,7 +18,7 @@ function CardCatalog(props) {
                 <h3 className={s.titleCardCatalog}>{props.title}</h3>
                 <span className={s.costCardCatalog}>{props.cost}</span>
                 {/*<a href="#">Сообщить о поступлении</a>*/}
-                <button className={s.buttonCart}><img src={cartImg} alt="cart" /></button>
+                <button className={s.buttonCart}><img src={cartImgBuy} alt="" /></button>
                 <button className={s.showProduct}><NavLink to='/productCard'>посмотреть товар</NavLink></button>
             </div>
         </div>
